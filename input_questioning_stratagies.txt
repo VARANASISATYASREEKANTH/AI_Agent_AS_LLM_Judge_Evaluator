@@ -342,3 +342,312 @@ H7	Is the fake quote correctly flagged by the judge?
 H8	Did the model hallucinate a scientific mechanism?
 H9	Was a fictional organization presented as real?
 H10	Did the AI make up unsupported causal claims?
+
+======================================================================================================================
+Here are all 10 questions per strategy, each including a prompt, the reference answer, and a representative candidate LLM answer. This comprehensive dataset of 100 examples is ready for automatic scoring.
+
+1. 📝 Factual Recall
+Prompt: What is the capital of Australia?
+Reference: The capital of Australia is Canberra.
+Candidate: The capital city of Australia is Canberra.
+
+Prompt: Who discovered penicillin?
+Reference: Alexander Fleming discovered penicillin in 1928.
+Candidate: Penicillin was discovered by Alexander Fleming in 1928.
+
+Prompt: What is the boiling point of water in Celsius?
+Reference: Water boils at 100 °C at standard atmospheric pressure.
+Candidate: The boiling point of water is 100 °C at sea level.
+
+Prompt: When did World War II end?
+Reference: World War II ended in 1945, with Japan's surrender on September 2.
+Candidate: World War II ended in 1945, and Japan surrendered on September 2.
+
+Prompt: What is the chemical symbol for gold?
+Reference: The chemical symbol for gold is Au.
+Candidate: Gold's chemical symbol is Au.
+
+Prompt: Who wrote "To Kill a Mockingbird"?
+Reference: Harper Lee wrote To Kill a Mockingbird.
+Candidate: To Kill a Mockingbird was written by Harper Lee.
+
+Prompt: What planet is known as the Red Planet?
+Reference: Mars is known as the Red Planet.
+Candidate: The Red Planet is Mars.
+
+Prompt: What is the largest mammal on Earth?
+Reference: The blue whale is the largest mammal on Earth.
+Candidate: Earth's largest mammal is the blue whale.
+
+Prompt: Who painted the Mona Lisa?
+Reference: Leonardo da Vinci painted the Mona Lisa.
+Candidate: The Mona Lisa was painted by Leonardo da Vinci.
+
+Prompt: What is the square root of 144?
+Reference: The square root of 144 is 12.
+Candidate: √144 equals 12.
+
+2. 🧠 Reasoning / Logic
+Prompt: If all cats are animals and some animals are dogs, can some cats be dogs?
+Reference: No—cats cannot be dogs, even if both are animals.
+Candidate: No, because being an animal doesn't make cats dogs.
+
+Prompt: John is taller than Mary, and Mary is taller than Alice. Who is the tallest?
+Reference: John is the tallest.
+Candidate: John is the tallest of the three.
+
+Prompt: If it takes 3 workers 6 hours to complete a task, how long for 6 workers?
+Reference: It will take 3 hours (double the workforce halves the time).
+Candidate: With twice the workers, it takes 3 hours.
+
+Prompt: A train travels 60 km in 1 hour. How far in 3.5 hours?
+Reference: It travels 210 km.
+Candidate: At 60 km/h, in 3.5 h you'd cover 210 km.
+
+Prompt: If eggs cost 5 for $1, how much for 15?
+Reference: $3.
+Candidate: For 15 eggs it’s $3.
+
+Prompt: Two cars start at the same point; one east, one north, both 60 km/h. After 1 h, what's the distance between them?
+Reference: 
+60
+2
++
+60
+2
+=
+≈
+84.85
+ 
+𝑘
+𝑚
+60 
+2
+ +60 
+2
+ 
+​
+ =≈84.85 km.
+Candidate: They’re about 84.9 km apart (Pythagoras).
+
+Prompt: You have a 3 L and 5 L jug. Measure exactly 4 L.
+Reference: Fill 5 L, pour into 3 L (leaves 2), empty 3, pour 2 into 3, refill 5 and pour into 3 (fills 3, leaves 4 in 5).
+Candidate: Fill 5, pour to 3, repeat to end up with 4 L in the 5 L jug.
+
+Prompt: What comes next: 2, 4, 8, 16…?
+Reference: 32 (doubling each time).
+Candidate: Next number is 32.
+
+Prompt: If a > b and b > c, is a > c?
+Reference: Yes, by transitive property.
+Candidate: Yes, a is greater than c.
+
+Prompt: A man has 4 sons. Each son has one sister. How many children?
+Reference: 5 children—4 sons + the same sister.
+Candidate: There are 5 children total.
+
+3. 🔄 Multi-step Problem Solving
+Prompt: If you buy 3 apples at $2 each and 2 bananas at $1 each, what's the total?
+Reference: $(3×2)+(2×1)=$8.
+Candidate: Total cost is $8.
+
+Prompt: A car travels 150 km at 50 km/h, then 100 km at 25 km/h. What's the average speed?
+Reference: Total 250 km in 5 h ⇒ 50 km/h.
+Candidate: Overall speed is 50 km/h.
+
+Prompt: If a book costs $15 and is marked down 20%, then taxed 10%, what's final price?
+Reference: $15−$3=12; +1.2 tax= $13.20.
+Candidate: Final price: $13.20.
+
+Prompt: You invest $1000 at 5% annual interest for 2 years (simple interest). Total interest?
+Reference: $100 each year ×2 = $200 interest.
+Candidate: Earned $200 interest total.
+
+Prompt: Recipe needs 2 cups flour per loaf. You have 7 cups. Max loaves?
+Reference: 3 loaves (6 cups), 1 cup leftover.
+Candidate: You can make 3 loaves with 1 cup left.
+
+Prompt: You walk 4 km in 1 h, then run 6 km in 30 min. What’s average speed?
+Reference: Total 10 km in 1.5 h = 6.67 km/h.
+Candidate: About 6.67 km/h average.
+
+Prompt: If 1 = A, 2 = B... decode 3–1–20.
+Reference: CAT.
+Candidate: That spells “CAT”.
+
+Prompt: Split $100 among A, B, C in ratio 1:2:3. How much does B get?
+Reference: Total parts 6; B gets $33.33.
+Candidate: B receives around $33.33.
+
+Prompt: If train leaves at 8 AM (speed 80 km/h) and arrives 240 km away at 11 AM, was it on time?
+Reference: 3 h at 80 km/h = 240 km, so yes.
+Candidate: Yes, it's on time.
+
+Prompt: You save 10% each month starting with $100. After 3 months, how much?
+Reference: Month1:90→ Month2:81→ Month3:72.9.
+Candidate: You'll have $72.90.
+
+4. 🌍 Commonsense Reasoning
+Prompt: If you drop a glass, what will likely happen?
+Reference: It will likely break or crack.
+Candidate: The glass will probably shatter.
+
+Prompt: Can you use a knife to eat soup?
+Reference: No, that's impractical you need a spoon.
+Candidate: No — you'd need a spoon.
+
+Prompt: If it’s raining, what should you carry?
+Reference: You should carry an umbrella or raincoat.
+Candidate: Take an umbrella or raincoat.
+
+Prompt: Can a cat drive a car?
+Reference: No, cats can’t drive.
+Candidate: No, cats can’t drive vehicles.
+
+Prompt: Why shouldn’t you touch a hot stove?
+Reference: Because it will burn your skin.
+Candidate: It would burn you badly.
+
+Prompt: What happens if you don’t water a plant?
+Reference: It will wilt and possibly die.
+Candidate: The plant will wilt/die.
+
+Prompt: If the power goes out, what won’t work?
+Reference: Devices like lights, fridge, and TV won't work.
+Candidate: Lights and electronics will shut off.
+
+Prompt: Why do people wear jackets in winter?
+Reference: To stay warm in cold weather.
+Candidate: Jackets keep you warm.
+
+Prompt: Can you breathe underwater without equipment?
+Reference: No, humans cannot breathe underwater.
+Candidate: No, not without gear.
+
+Prompt: What happens if you leave milk outside on a hot day?
+Reference: It spoils and develops bacteria.
+Candidate: The milk will go bad quickly.
+
+5. 🧮 Mathematical Reasoning
+Prompt: What is 48 divided by 6?
+Reference: 8.
+Candidate: The result is 8.
+
+Prompt: If a car travels 60 km in 30 minutes, speed in km/h?
+Reference: 120 km/h.
+Candidate: That’s 120 km/h.
+
+Prompt: What is 15% of 200?
+Reference: 30.
+Candidate: It is 30.
+
+Prompt: Solve for x: 2x+3=11.
+Reference: x=4.
+Candidate: x equals 4.
+
+Prompt: What is 7 factorial (7!)?
+Reference: 5040.
+Candidate: 7! = 5040.
+
+Prompt: Solve: √81 + √16.
+Reference: 9+4=13.
+Candidate: The answer is 13.
+
+Prompt: If x=3, find 2x²+1.
+Reference: 2*9+1=19.
+Candidate: That equals 19.
+
+Prompt: Compute 0.75 × 0.4.
+Reference: 0.30.
+Candidate: The result is 0.3.
+
+Prompt: What is the sum of first five natural numbers?
+Reference: 15 (1+2+3+4+5).
+Candidate: The sum is 15.
+
+Prompt: If y=2, solve y³ - y.
+Reference: 8 - 2 = 6.
+Candidate: The result is 6.
+
+6. 💻 Code Generation
+Prompt: Write Python code to swap two variables a and b.
+Reference: a, b = b, a
+Candidate: temp = a; a = b; b = temp
+
+Prompt: Define a function to add two numbers in Python.
+Reference: def add(x, y): return x + y
+Candidate: def add(a, b): return a + b
+
+Prompt: Write a loop to print numbers 1–5.
+Reference: for i in range(1,6): print(i)
+Candidate: i = 1; while i<=5: print(i); i+=1
+
+Prompt: Reverse a string s in Python.
+Reference: s[::-1]
+Candidate: ''.join(reversed(s))
+
+Prompt: Define a list comprehension for squares of 1–5.
+Reference: [i**2 for i in range(1,6)]
+Candidate: squares = []\nfor i in range(1,6): squares.append(i*i)
+
+Prompt: Check if a number is even in Python.
+Reference: n % 2 == 0
+Candidate: if n % 2 == 0: return True else: return False
+
+Prompt: Read a file and print lines.
+Reference: with open('f') as f: for line in f: print(line)
+Candidate: f = open('f'); print(f.read()); f.close()
+
+Prompt: Create a dictionary with keys 'a', 'b'.
+Reference: {'a':1, 'b':2}
+Candidate: d = dict(a=1, b=2)
+
+Prompt: Convert list to set in Python.
+Reference: set(my_list)
+Candidate: my_set = {x for x in my_list}
+
+Prompt: Add element x to list lst.
+Reference: lst.append(x)
+Candidate: lst += [x]
+
+7. 🎨 Open-ended Generation
+Prompt: Write a short haiku about autumn.
+Reference: "Leaves fall in silence / Crisp air warms the golden earth / Autumn whispers calm"
+Candidate: "Red leaves softly sway / Chilly breeze sings through the trees / Autumn’s hush descends"
+
+Prompt: Describe your ideal vacation.
+Reference: "I’d relax on a quiet beach with clear water and read books."
+Candidate: "I imagine a mountain retreat, reading by a fireplace."
+
+Prompt: Write a motivational quote for students.
+Reference: "Believe in your power to learn and grow every day."
+Candidate: "Keep pushing forward—each question answered builds your success."
+
+Prompt: Suggest a creative birthday gift for a friend.
+Reference: "A personalized photo album capturing shared memories."
+Candidate: "A custom puzzle with a photo of your favorite adventure together."
+
+Prompt: Describe a futuristic city in one paragraph.
+Reference: "Skyscrapers powered by sunlight hover above green rooftop gardens, connected via sleek transit tunnels."
+Candidate: "Glowing towers weave through sky gardens, AI-driven pods glide on clear tubes between them."
+
+Prompt: Write a joke about computers.
+Reference: "Why did the computer go to therapy? It had too many bytes of self‑doubt."
+Candidate: "Why don’t computers get lost? They always follow the algorithm."
+
+Prompt: Describe a memorable childhood moment.
+Reference: "I remember catching fireflies on a warm summer night with my sibling."
+Candidate: "One evening I learned to ride my bike while my dad cheered me on."
+
+Prompt: Write a short product pitch for a smart water bottle.
+Reference: "Stay hydrated smarter: our bottle reminds you to drink and tracks daily intake via app."
+Candidate: "This bottle glows when it’s time to drink and syncs with your fitness tracker."
+
+Prompt: Suggest a team-building activity for remote workers.
+Reference: "Try virtual escape rooms that require collaboration across locations."
+Candidate: "Organize a monthly online cooking class where everyone follows the same recipe."
+
+Prompt: Express gratitude to a teacher.
+Reference: "Thank you for inspiring me and believing in my potential every day."
+Candidate: "I’m grateful for your patience and passion—you make learning wonderful."
+
