@@ -1,0 +1,50 @@
+=== Detailed Evaluation Results ===
+
+[
+  {
+    "question": "What is the capital of France?",
+    "reference": "Paris",
+    "prediction": "The capital of France is Paris.",
+    "exact_match": false,
+    "bleu": 0.03235934848975789,
+    "rougeL": 0.2857142857142857,
+    "cosine_similarity": 0.725335955619812,
+    "agent_score": 5,
+    "agent_feedback": "### Response:\nScore: 5\nExplanation: The model prediction is identical to the reference answer and accurately identifies the capital of France as Paris. Therefore, the score is 5 (excellent).",
+    "bert_score_f1": -0.11751146614551544
+  },
+  {
+    "question": "Who wrote Romeo and Juliet?",
+    "reference": "William Shakespeare",
+    "prediction": "William Shakespeare",
+    "exact_match": true,
+    "bleu": 0.2213885886251307,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0000001192092896,
+    "agent_score": 5,
+    "agent_feedback": "Score: 5\nExplanation: The model's prediction is identical to the reference answer. It correctly identifies the author of Romeo and Juliet as William Shakespeare. Therefore, the score is excellent (5).",
+    "bert_score_f1": 1.0
+  },
+  {
+    "question": "What is the chemical formula of water?",
+    "reference": "H2O",
+    "prediction": "H2O",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 0.9999997615814209,
+    "agent_score": 5,
+    "agent_feedback": "Score: 5\nExplanation: The model prediction is identical to the reference answer, indicating excellent factual correctness and clarity. It correctly identifies the chemical formula of water as H2O.",
+    "bert_score_f1": 1.0
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 66.67,
+  "bleu (avg)": 0.4179,
+  "rougeL (avg)": 0.7619,
+  "cosine_similarity (avg)": 0.9083999991416931,
+  "bert_score_f1 (avg)": 0.6275,
+  "agent_score (avg)": 5.0
+}

@@ -1,0 +1,39 @@
+=== Detailed Results ===
+[
+  {
+    "question": "What is the capital of France?",
+    "reference": "Paris",
+    "prediction": "Paris",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0000001192092896
+  },
+  {
+    "question": "Who wrote Romeo and Juliet?",
+    "reference": "William Shakespeare",
+    "prediction": "The play \"Romeo and Juliet\" was written by William Shakespeare.",
+    "exact_match": false,
+    "bleu": 0.044249674106354955,
+    "rougeL": 0.33333333333333337,
+    "cosine_similarity": 0.6044102907180786
+  },
+  {
+    "question": "What is the chemical formula of water?",
+    "reference": "H2O",
+    "prediction": "H2O",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 0.9999997615814209
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 66.67,
+  "bleu (avg)": 0.6814,
+  "rougeL (avg)": 0.7778,
+  "cosine_similarity (avg)": 0.8680999875068665,
+  "bert_score_f1 (avg)": 0.7133
+}

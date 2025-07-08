@@ -1,0 +1,61 @@
+=== Per-Sample Results ===
+[
+  {
+    "question": "What is the capital of France?",
+    "reference": "Paris",
+    "prediction": "Paris",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0000001192092896,
+    "judge_scores": {
+      "Mistral": 5
+    },
+    "judge_feedback": {
+      "Mistral": "Answer: Score: 5\nExplanation: The model's prediction matches perfectly with the reference. It correctly identifies the capital city of France as Paris. As this is a very specific query, it demonstrates high accuracy and completeness in its response. Hence, I would rate this prediction as excellent, deserving of a score of 5."
+    },
+    "bert_score_f1": 1.0000007152557373
+  },
+  {
+    "question": "Who wrote Romeo and Juliet?",
+    "reference": "William Shakespeare",
+    "prediction": "William Shakespeare",
+    "exact_match": true,
+    "bleu": 0.2213885886251307,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0000001192092896,
+    "judge_scores": {
+      "Mistral": 55
+    },
+    "judge_feedback": {
+      "Mistral": "---\n\nI apologize, but I am unable to provide a score for this question as it is not applicable. The prediction is correct and complete. It matches the reference perfectly. Therefore, I would give it a perfect score of 5/5."
+    },
+    "bert_score_f1": 1.0
+  },
+  {
+    "question": "What is the chemical formula of water?",
+    "reference": "H2O",
+    "prediction": "H2O",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 0.9999997615814209,
+    "judge_scores": {
+      "Mistral": 5
+    },
+    "judge_feedback": {
+      "Mistral": "Answer: Score: 5\nExplanation: The model's prediction was entirely correct. It perfectly matches the reference. The clarity and completeness of the answer were also excellent as it provided a clear, single response without needing elaboration or additional context."
+    },
+    "bert_score_f1": 1.0
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 100.0,
+  "bleu (avg)": 0.7405,
+  "rougeL (avg)": 1.0,
+  "cosine_similarity (avg)": 1.0,
+  "bert_score_f1 (avg)": 1.0,
+  "Mistral_score (avg)": 21.67
+}
