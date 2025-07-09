@@ -23,73 +23,7 @@ model = AutoModelForCausalLM.from_pretrained(
 # === Sample Evaluation Data ===
 eval_data = [
 
-  {"question": "What is the capital of Australia?", "answer": "Canberra"},
-  {"question": "Who discovered penicillin?", "answer": "Alexander Fleming"},
-  {"question": "What is the boiling point of water in Celsius?", "answer": "100°C"},
-  {"question": "When did World War II end?", "answer": "1945"},
-  {"question": "What is the chemical symbol for gold?", "answer": "Au"},
-  {"question": "Who wrote 'To Kill a Mockingbird'?", "answer": "Harper Lee"},
-  {"question": "What planet is known as the Red Planet?", "answer": "Mars"},
-  {"question": "What is the largest mammal on Earth?", "answer": "Blue whale"},
-  {"question": "Who painted the Mona Lisa?", "answer": "Leonardo da Vinci"},
-  {"question": "What is the square root of 144?", "answer": "12"},
-
-  {"question": "If all cats are animals and some animals are dogs, can some cats be dogs?", "answer": "No"},
-  {"question": "John is taller than Mary, and Mary is taller than Alice. Who is the tallest?", "answer": "John"},
-  {"question": "If it takes 3 workers 6 hours to complete a task, how long for 6 workers?", "answer": "3 hours"},
-  {"question": "A train travels 60 km in 1 hour. How far in 3.5 hours?", "answer": "210 km"},
-  {"question": "If eggs cost 5 for $1, how much for 15?", "answer": "$3"},
-  {"question": "Two cars travel east and north at 60 km/h for 1 hour. How far apart are they?", "answer": "84.85 km"},
-  {"question": "You have a 3L and 5L jug. How to measure 4L?", "answer": "Use water transfer to leave 4L in the 5L jug"},
-  {"question": "What comes next: 2, 4, 8, 16?", "answer": "32"},
-  {"question": "If a > b and b > c, is a > c?", "answer": "Yes"},
-  {"question": "A man has 4 sons, each has one sister. How many children?", "answer": "5"},
-
-  {"question": "If you buy 3 apples at $2 and 2 bananas at $1, total cost?", "answer": "$8"},
-  {"question": "Car goes 150km at 50km/h, 100km at 25km/h. Average speed?", "answer": "50 km/h"},
-  {"question": "Book is $15, 20% off, then 10% tax. Final price?", "answer": "$13.20"},
-  {"question": "$1000 at 5% simple interest for 2 years. Interest?", "answer": "$200 total"},
-  {"question": "2 cups flour per loaf, have 7 cups. Max loaves?", "answer": "3 loaves"},
-  {"question": "Walk 4 km in 1h, run 6 km in 30min. Average speed?", "answer": "6.67 km/h"},
-  {"question": "If 1=A, 2=B, what is 3–1–20?", "answer": "CAT"},
-  {"question": "Split $100 in 1:2:3 ratio. What does B get?", "answer": "$33.33"},
-  {"question": "Train leaves at 8AM, arrives 240km away at 11AM. On time?", "answer": "Yes"},
-  {"question": "Save 10% per month from $100. After 3 months?", "answer": "$72.90"},
-
-  {"question": "If you drop a glass, what will likely happen?", "answer": "It will break"},
-  {"question": "Can you use a knife to eat soup?", "answer": "No"},
-  {"question": "If it’s raining, what should you carry?", "answer": "Umbrella"},
-  {"question": "Can a cat drive a car?", "answer": "No"},
-  {"question": "Why shouldn’t you touch a hot stove?", "answer": "It will burn you"},
-  {"question": "What happens if you don’t water a plant?", "answer": "It will wilt or die"},
-  {"question": "If the power goes out, what won’t work?", "answer": "Electrical devices"},
-  {"question": "Why do people wear jackets in winter?", "answer": "To stay warm"},
-  {"question": "Can you breathe underwater without equipment?", "answer": "No"},
-  {"question": "What happens if milk is left out on a hot day?", "answer": "It spoils"},
-
-  {"question": "What is 48 divided by 6?", "answer": "8"},
-  {"question": "A car travels 60 km in 30 minutes. Speed in km/h?", "answer": "120 km/h"},
-  {"question": "What is 15% of 200?", "answer": "30"},
-  {"question": "Solve for x: 2x+3=11", "answer": "4"},
-  {"question": "What is 7 factorial?", "answer": "5040"},
-  {"question": "Solve: √81 + √16", "answer": "13"},
-  {"question": "If x=3, find 2x²+1", "answer": "19"},
-  {"question": "Compute 0.75 × 0.4", "answer": "0.3"},
-  {"question": "Sum of first five natural numbers?", "answer": "15"},
-  {"question": "If y=2, solve y³ - y", "answer": "6"},
-
-  {"question": "Write Python code to swap variables a and b", "answer": "a, b = b, a"},
-  {"question": "Define a function to add two numbers", "answer": "def add(x, y): return x + y"},
-  {"question": "Write a loop to print numbers 1–5", "answer": "for i in range(1,6): print(i)"},
-  {"question": "Reverse a string s in Python", "answer": "s[::-1]"},
-  {"question": "List comprehension for squares 1–5", "answer": "[i**2 for i in range(1,6)]"},
-  {"question": "Check if number is even", "answer": "n % 2 == 0"},
-  {"question": "Read a file and print lines", "answer": "with open('file.txt') as f: print(f.read())"},
-  {"question": "Create dictionary with keys a, b", "answer": "{'a':1, 'b':2}"},
-  {"question": "Convert list to set", "answer": "set(my_list)"},
-  {"question": "Add x to list lst", "answer": "lst.append(x)"},
-
-  {"question": "Write a haiku about autumn", "answer": "Leaves fall in silence / Crisp air warms the golden earth / Autumn whispers calm"},
+{"question": "Write a haiku about autumn", "answer": "Leaves fall in silence / Crisp air warms the golden earth / Autumn whispers calm"},
   {"question": "Describe your ideal vacation", "answer": "Relaxing on a beach with books and sunshine"},
   {"question": "Write a motivational quote for students", "answer": "Believe in your power to learn and grow every day"},
   {"question": "Suggest a creative birthday gift", "answer": "Personalized photo album of shared memories"},
@@ -99,7 +33,6 @@ eval_data = [
   {"question": "Pitch a smart water bottle", "answer": "Bottle reminds you to drink and tracks intake via app"},
   {"question": "Team-building activity for remote teams?", "answer": "Virtual escape room requiring collaboration"},
   {"question": "Express gratitude to a teacher", "answer": "Thank you for inspiring and believing in me every day"}
-
 
 ]
 
@@ -163,7 +96,7 @@ def safe_convert(obj):
     return str(obj) if not isinstance(obj, (dict, list, str, float, int)) else obj
 
 # === Save to File ===
-with open("C:\myworks\AI_Agent_AS_LLM_Judge_Evaluator/llm_eval_full_metrics.txt", "w", encoding="utf-8") as f:
+with open("C:\myworks\AI_Agent_AS_LLM_Judge_Evaluator/llm_eval_full_metrics_all_open_ended_creation.txt", "w", encoding="utf-8") as f:
     f.write("=== Detailed Results ===\n")
     json_string = json.dumps(results, indent=2, default=safe_convert)
     f.write(json_string)

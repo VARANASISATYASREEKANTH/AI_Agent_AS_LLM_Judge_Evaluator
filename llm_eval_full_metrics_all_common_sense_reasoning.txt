@@ -1,0 +1,102 @@
+=== Detailed Results ===
+[
+  {
+    "question": "If you drop a glass, what will likely happen?",
+    "reference": "It will break",
+    "prediction": "It will likely break into pieces.",
+    "exact_match": false,
+    "bleu": 0.09068059995923879,
+    "rougeL": 0.6666666666666666,
+    "cosine_similarity": 0.7818055152893066
+  },
+  {
+    "question": "Can you use a knife to eat soup?",
+    "reference": "No",
+    "prediction": "Yes, you can use a knife to eat soup.",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.14140819013118744
+  },
+  {
+    "question": "If it\u2019s raining, what should you carry?",
+    "reference": "Umbrella",
+    "prediction": "An umbrella.",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.6666666666666666,
+    "cosine_similarity": 0.9418950080871582
+  },
+  {
+    "question": "Can a cat drive a car?",
+    "reference": "No",
+    "prediction": "No, cats cannot drive cars. They lack the physical ability to operate vehicles and do not have the cognitive skills to understand the rules of the road.",
+    "exact_match": false,
+    "bleu": 0.009048295247234425,
+    "rougeL": 0.07142857142857142,
+    "cosine_similarity": 0.09274798631668091
+  },
+  {
+    "question": "Why shouldn\u2019t you touch a hot stove?",
+    "reference": "It will burn you",
+    "prediction": "Because it\u2019s hot and can burn you.",
+    "exact_match": false,
+    "bleu": 0.056950849982219685,
+    "rougeL": 0.5,
+    "cosine_similarity": 0.4844030737876892
+  },
+  {
+    "question": "What happens if you don\u2019t water a plant?",
+    "reference": "It will wilt or die",
+    "prediction": "If you don't water a plant, it will start to show signs of stress. The leaves may begin to yellow or wilt, the stem may dry out and the plant may lose its ability to photosynthesize. Eventually, without enough water, the roots will dehydrate and the plant will die.",
+    "exact_match": false,
+    "bleu": 0.007683685923024073,
+    "rougeL": 0.14545454545454545,
+    "cosine_similarity": 0.38037487864494324
+  },
+  {
+    "question": "If the power goes out, what won\u2019t work?",
+    "reference": "Electrical devices",
+    "prediction": "The answer is not straightforward as it depends on the specific situation and type of power outage. However, in general, appliances that require electricity to operate will not work during a power outage. This includes things like lights, computers, televisions, air conditioners, ovens, refrigerators, and washing machines. Additionally, any devices that are connected to the internet or require a network connection, such as phones or smart homes systems, may also be affected. It is always best to have backup plans in place, such as battery-operated or hand-crank radios, flashlights, and manual can openers, to stay informed and safe during a power outage.",
+    "exact_match": false,
+    "bleu": 0.0028474940617707768,
+    "rougeL": 0.03773584905660378,
+    "cosine_similarity": 0.26268792152404785
+  },
+  {
+    "question": "Why do people wear jackets in winter?",
+    "reference": "To stay warm",
+    "prediction": "People wear jackets in winter to keep themselves warm and protected from the cold, snow, wind and other harsh weather conditions.",
+    "exact_match": false,
+    "bleu": 0.011199617145528714,
+    "rougeL": 0.16666666666666666,
+    "cosine_similarity": 0.49896883964538574
+  },
+  {
+    "question": "Can you breathe underwater without equipment?",
+    "reference": "No",
+    "prediction": "No, humans cannot breathe underwater naturally without the aid of special equipment. Our lungs are not designed to extract oxygen from water, and we would suffocate within a few minutes if submerged for an extended period.",
+    "exact_match": false,
+    "bleu": 0.0071638813215387015,
+    "rougeL": 0.05405405405405406,
+    "cosine_similarity": 0.07911576330661774
+  },
+  {
+    "question": "What happens if milk is left out on a hot day?",
+    "reference": "It spoils",
+    "prediction": "Milk will spoil and turn sour due to the growth of bacteria in warm temperatures. It's recommended to refrigerate milk promptly to extend its shelf life.",
+    "exact_match": false,
+    "bleu": 0.009565665109256835,
+    "rougeL": 0.06896551724137931,
+    "cosine_similarity": 0.36197227239608765
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 0.0,
+  "bleu (avg)": 0.0195,
+  "rougeL (avg)": 0.2378,
+  "cosine_similarity (avg)": 0.4025000035762787,
+  "bert_score_f1 (avg)": 0.1321
+}

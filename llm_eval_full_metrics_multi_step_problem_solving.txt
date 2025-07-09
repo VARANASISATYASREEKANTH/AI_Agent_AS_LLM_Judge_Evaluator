@@ -1,0 +1,102 @@
+=== Detailed Results ===
+[
+  {
+    "question": "If you buy 3 apples at $2 and 2 bananas at $1, total cost?",
+    "reference": "$8",
+    "prediction": "$7",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.8422627449035645
+  },
+  {
+    "question": "Car goes 150km at 50km/h, 100km at 25km/h. Average speed?",
+    "reference": "50 km/h",
+    "prediction": "75km/h",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.4,
+    "cosine_similarity": 0.8773996829986572
+  },
+  {
+    "question": "Book is $15, 20% off, then 10% tax. Final price?",
+    "reference": "$13.20",
+    "prediction": "$12",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.7554640769958496
+  },
+  {
+    "question": "$1000 at 5% simple interest for 2 years. Interest?",
+    "reference": "$200 total",
+    "prediction": "$646",
+    "exact_match": false,
+    "bleu": 0.04096772609215166,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.4819985032081604
+  },
+  {
+    "question": "2 cups flour per loaf, have 7 cups. Max loaves?",
+    "reference": "3 loaves",
+    "prediction": "3.5",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.5,
+    "cosine_similarity": 0.2765375077724457
+  },
+  {
+    "question": "Walk 4 km in 1h, run 6 km in 30min. Average speed?",
+    "reference": "6.67 km/h",
+    "prediction": "24 km/h",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.5714285714285715,
+    "cosine_similarity": 0.825892984867096
+  },
+  {
+    "question": "If 1=A, 2=B, what is 3\u20131\u201320?",
+    "reference": "CAT",
+    "prediction": "-18",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.22062967717647552
+  },
+  {
+    "question": "Split $100 in 1:2:3 ratio. What does B get?",
+    "reference": "$33.33",
+    "prediction": "$16.67",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.7432626485824585
+  },
+  {
+    "question": "Train leaves at 8AM, arrives 240km away at 11AM. On time?",
+    "reference": "Yes",
+    "prediction": "True",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.25862371921539307
+  },
+  {
+    "question": "Save 10% per month from $100. After 3 months?",
+    "reference": "$72.90",
+    "prediction": "$90",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.6666666666666666,
+    "cosine_similarity": 0.7711319923400879
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 0.0,
+  "bleu (avg)": 0.0379,
+  "rougeL (avg)": 0.2138,
+  "cosine_similarity (avg)": 0.6053000092506409,
+  "bert_score_f1 (avg)": 0.584
+}

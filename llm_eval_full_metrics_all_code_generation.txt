@@ -1,0 +1,102 @@
+=== Detailed Results ===
+[
+  {
+    "question": "Write Python code to swap variables a and b",
+    "reference": "a, b = b, a",
+    "prediction": "a, b = b, a",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0
+  },
+  {
+    "question": "Define a function to add two numbers",
+    "reference": "def add(x, y): return x + y",
+    "prediction": "Here is an example of a function written in Python that takes two numbers as arguments and returns their sum:\n```python\ndef add_numbers(a, b):\n  sum = a + b\n  return sum\n```",
+    "exact_match": false,
+    "bleu": 0.02111008229515979,
+    "rougeL": 0.15789473684210525,
+    "cosine_similarity": 0.6653110980987549
+  },
+  {
+    "question": "Write a loop to print numbers 1\u20135",
+    "reference": "for i in range(1,6): print(i)",
+    "prediction": "for i in range(1, 6):\n    print(i)",
+    "exact_match": false,
+    "bleu": 0.6162607099729586,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0
+  },
+  {
+    "question": "Reverse a string s in Python",
+    "reference": "s[::-1]",
+    "prediction": "You can reverse a string using the built-in Python function `reverse()`. Here is an example of how to do it:\n\n```python\ns = input(\"Enter a string: \")\nreversed_string = s[::-1]\nprint(\"Reversed String:\", reversed_string)\n```\n\nThis will prompt the user for input (a string), then use slicing to reverse that string in one line. The `[::-1]` slice means \"start at the end of the string\" and \"end at position 0\", effectively reversing the entire string.",
+    "exact_match": false,
+    "bleu": 0.029421461168103614,
+    "rougeL": 0.05128205128205127,
+    "cosine_similarity": 0.25342652201652527
+  },
+  {
+    "question": "List comprehension for squares 1\u20135",
+    "reference": "[i**2 for i in range(1,6)]",
+    "prediction": "[i*i for i in range(1,6)]",
+    "exact_match": false,
+    "bleu": 0.676130446299448,
+    "rougeL": 0.875,
+    "cosine_similarity": 0.9489954710006714
+  },
+  {
+    "question": "Check if number is even",
+    "reference": "n % 2 == 0",
+    "prediction": "True",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.06846384704113007
+  },
+  {
+    "question": "Read a file and print lines",
+    "reference": "with open('file.txt') as f: print(f.read())",
+    "prediction": "To read a file and print the lines, you can use the following code:\n```python\nwith open('file.txt', 'r') as file:\n    for line in file:\n        print(line)\n```\nThis code uses the `open()` function to open the file with the name 'file.txt' in read mode (`'r'`). The file object is then assigned to the variable `file`. Next, we use a `with` statement to ensure that the file is properly closed after use. Inside the `with` block, we use a `for` loop to iterate over each line in the file. Finally, we print out each line using the `print()` function.",
+    "exact_match": false,
+    "bleu": 0.04075751963020164,
+    "rougeL": 0.12844036697247707,
+    "cosine_similarity": 0.7753645181655884
+  },
+  {
+    "question": "Create dictionary with keys a, b",
+    "reference": "{'a':1, 'b':2}",
+    "prediction": "{'a': None, 'b': None}",
+    "exact_match": false,
+    "bleu": 0.06616869624437408,
+    "rougeL": 0.5,
+    "cosine_similarity": 0.7539004683494568
+  },
+  {
+    "question": "Convert list to set",
+    "reference": "set(my_list)",
+    "prediction": "{1, 2}\n\n# To convert a list to a set\nlist = [1, 2]\nset_list = set(list) # or list.convert()\nprint(set_list)\n\n# If there are duplicate elements in the list\nlist = [1, 1, 3]\nset_list = set(list)\nprint(set_list)\n\n# If there are no elements in the list\nlist = []\nset_list = set(list)\nprint(set_list)",
+    "exact_match": false,
+    "bleu": 0.008741705339501835,
+    "rougeL": 0.06666666666666667,
+    "cosine_similarity": 0.5698989629745483
+  },
+  {
+    "question": "Add x to list lst",
+    "reference": "lst.append(x)",
+    "prediction": "lst.append(x)",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 0.9999999403953552
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 20.0,
+  "bleu (avg)": 0.3459,
+  "rougeL (avg)": 0.4779,
+  "cosine_similarity (avg)": 0.703499972820282,
+  "bert_score_f1 (avg)": 0.4308
+}

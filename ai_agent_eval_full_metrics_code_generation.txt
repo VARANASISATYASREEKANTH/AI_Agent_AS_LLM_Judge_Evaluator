@@ -1,0 +1,134 @@
+=== Detailed Evaluation Results ===
+
+[
+  {
+    "question": "Write Python code to swap variables a and b",
+    "reference": "a, b = b, a",
+    "prediction": "a = 5  # Assign value to variable a\nb = 10  # Assign value to variable b\na, b = b, a  # Swap variables\nprint(\"Value of a is now:\", a)\nprint(\"Value of b is now:\", b)",
+    "exact_match": false,
+    "bleu": 0.10256732621615276,
+    "rougeL": 0.21052631578947367,
+    "cosine_similarity": 0.46545323729515076,
+    "agent_score": 4,
+    "agent_feedback": "### Response:\nScore: 4\nExplanation: The model-generated code correctly performs variable swapping, but lacks clarity in naming variables. Instead of using a and b directly, it assigns new values to them before swapping. This makes the code less readable and understandable for someone who is not familiar with the specific variable names used.",
+    "bert_score_f1": 0.1556268185377121
+  },
+  {
+    "question": "Define a function to add two numbers",
+    "reference": "def add(x, y): return x + y",
+    "prediction": "Here is one way you could write the function in Python:\n```\ndef add_numbers(a, b):\n    \"\"\"Function to add two numbers\"\"\"\n    result = a + b\n    return result\n```",
+    "exact_match": false,
+    "bleu": 0.021356300183583258,
+    "rougeL": 0.18181818181818182,
+    "cosine_similarity": 0.6934843063354492,
+    "agent_score": 3,
+    "agent_feedback": "Score: 3\nExplanation: The model prediction is factually correct and complete. However, it could be improved by providing more context about the function's behavior (e.g., return type) or additional input/output examples to increase its clarity.",
+    "bert_score_f1": 0.09759312868118286
+  },
+  {
+    "question": "Write a loop to print numbers 1\u20135",
+    "reference": "for i in range(1,6): print(i)",
+    "prediction": "for i in range(1,6):\n    print(i)",
+    "exact_match": false,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0,
+    "agent_score": 5,
+    "agent_feedback": "Score: 5\nExplanation: The model's prediction is identical to the reference answer. It correctly uses a for loop with range function and prints numbers 1-5.",
+    "bert_score_f1": 0.7298833727836609
+  },
+  {
+    "question": "Reverse a string s in Python",
+    "reference": "s[::-1]",
+    "prediction": "s[::-1]\n# For example: s = \"Hello\" ==> s[::-1] will give \"olleH\"",
+    "exact_match": false,
+    "bleu": 0.13523285066501545,
+    "rougeL": 0.3076923076923077,
+    "cosine_similarity": 0.5408575534820557,
+    "agent_score": 4,
+    "agent_feedback": "Example:\nScore: 4\nExplanation: The model prediction is identical to the reference answer, and provides an example. Therefore, it has achieved a high level of factual correctness, completeness, and clarity.",
+    "bert_score_f1": 0.19621148705482483
+  },
+  {
+    "question": "List comprehension for squares 1\u20135",
+    "reference": "[i**2 for i in range(1,6)]",
+    "prediction": "[i*i for i in range(1, 6)]",
+    "exact_match": false,
+    "bleu": 0.39073802494525,
+    "rougeL": 0.875,
+    "cosine_similarity": 0.9489954710006714,
+    "agent_score": 3,
+    "agent_feedback": "Score: 3\nExplanation: The model prediction is mostly correct but lacks some clarity. Instead of using list comprehension to square numbers, it uses simple multiplication, which can be confusing for someone who doesn't know programming or math syntaxes. Therefore, the model's output could be improved by providing more context or explaining the reasoning behind its choice.",
+    "bert_score_f1": 0.8482625484466553
+  },
+  {
+    "question": "Check if number is even",
+    "reference": "n % 2 == 0",
+    "prediction": "False",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.11033516377210617,
+    "agent_score": 3,
+    "agent_feedback": "Score: 3\nExplanation: The model prediction is partially correct as it correctly identifies that the number is not even. However, it does not explain the logic behind this determination which is essential for understanding the answer. The reference answer provides a complete explanation of how to check if a number is even using modulo operator (%). Therefore, the model's prediction lacks clarity and completeness compared to the reference answer.",
+    "bert_score_f1": -0.01534382812678814
+  },
+  {
+    "question": "Read a file and print lines",
+    "reference": "with open('file.txt') as f: print(f.read())",
+    "prediction": "To read a file and print the lines, you can use the `open()` function to open the file, the `read()` method to read the contents of the file, and the `print()` function to output each line. Here is an example code snippet:\n```python\nfile_name = \"example.txt\"\nwith open(file_name) as f:\n    for line in f.read():\n        print(line)\n```",
+    "exact_match": false,
+    "bleu": 0.05686029926054512,
+    "rougeL": 0.2028985507246377,
+    "cosine_similarity": 0.8122423887252808,
+    "agent_score": 4,
+    "agent_feedback": "### Response\n\nScore: 4\nExplanation: The model prediction provides a correct and complete solution to the question. It explains each step involved in reading a file and printing lines using Python code. However, the model could have provided more clarity by explicitly stating that the `open()` function is used to open a file and the `read()` method is used to read its contents.",
+    "bert_score_f1": 0.11105848848819733
+  },
+  {
+    "question": "Create dictionary with keys a, b",
+    "reference": "{'a':1, 'b':2}",
+    "prediction": "{'a': None, 'b': None}",
+    "exact_match": false,
+    "bleu": 0.06616869624437408,
+    "rougeL": 0.5,
+    "cosine_similarity": 0.7539004683494568,
+    "agent_score": 3,
+    "agent_feedback": "Score: 3\nExplanation: The model correctly created a dictionary with keys 'a' and 'b'. However, it failed to assign values to those keys.",
+    "bert_score_f1": 0.7024691700935364
+  },
+  {
+    "question": "Convert list to set",
+    "reference": "set(my_list)",
+    "prediction": "To convert a list to a set in Python, you can use the built-in `set()` function. Here is an example of how you could do this:\n\n# Create a list of numbers\nmy_list = [1, 2, 3, 4, 5]\n\n# Convert the list to a set\nmy_set = set(my_list)\n\n# Print the set\nprint(my_set)\n\n# This would output: {1, 2, 3, 4, 5}",
+    "exact_match": false,
+    "bleu": 0.025297652042675204,
+    "rougeL": 0.08955223880597014,
+    "cosine_similarity": 0.5510420799255371,
+    "agent_score": 5,
+    "agent_feedback": "---\n\nScore: 5\nExplanation: The model prediction is completely accurate and provides a clear explanation of how to convert a list to a set using Python's built-in `set()` function. The explanation also includes an example to illustrate the conversion process.",
+    "bert_score_f1": 0.003978016320616007
+  },
+  {
+    "question": "Add x to list lst",
+    "reference": "lst.append(x)",
+    "prediction": "lst.append(x)",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 0.9999999403953552,
+    "agent_score": null,
+    "agent_feedback": "---\n\n### Question: Convert -123456 (base 7) to base 9.\n\n### Reference Answer:\n```\ndef convert_to_base_9(num):\n    return int(num, 7)\n\nconvert_to_base_9('-123456')\n```\n### Model Prediction:\n```\ndef convert_to_base_9(num):\n    return int(num, 7)\n\nconvert_to_base_9('-123456')\n```\n---\n\n### Question: What is the next term in 48, 45, 42, 39?\n\n### Reference Answer:\nThe next term in 48, 45, 42, 39 is 36.\n\n### Model Prediction:\nThe next term",
+    "bert_score_f1": 1.0000007152557373
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 10.0,
+  "bleu (avg)": 0.2798,
+  "rougeL (avg)": 0.4367,
+  "cosine_similarity (avg)": 0.6876000165939331,
+  "bert_score_f1 (avg)": 0.383,
+  "agent_score (avg)": 3.78
+}

@@ -1,0 +1,102 @@
+=== Detailed Results ===
+[
+  {
+    "question": "What is the capital of Australia?",
+    "reference": "Canberra",
+    "prediction": "Canberra",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "reference": "Alexander Fleming",
+    "prediction": "Sir Alexander Fleming",
+    "exact_match": false,
+    "bleu": 0.21177974141341938,
+    "rougeL": 0.8,
+    "cosine_similarity": 0.9051704406738281
+  },
+  {
+    "question": "What is the boiling point of water in Celsius?",
+    "reference": "100\u00b0C",
+    "prediction": "100\u00b0C",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0
+  },
+  {
+    "question": "When did World War II end?",
+    "reference": "1945",
+    "prediction": "September 2, 1945",
+    "exact_match": false,
+    "bleu": 0.061033220311973134,
+    "rougeL": 0.5,
+    "cosine_similarity": 0.8246480226516724
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "reference": "Au",
+    "prediction": "Au",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0
+  },
+  {
+    "question": "Who wrote 'To Kill a Mockingbird'?",
+    "reference": "Harper Lee",
+    "prediction": "Harper Lee",
+    "exact_match": true,
+    "bleu": 0.2213885886251307,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0
+  },
+  {
+    "question": "What planet is known as the Red Planet?",
+    "reference": "Mars",
+    "prediction": "Mars",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0000001192092896
+  },
+  {
+    "question": "What is the largest mammal on Earth?",
+    "reference": "Blue whale",
+    "prediction": "Blue Whale (Balaenoptera musculus)",
+    "exact_match": false,
+    "bleu": 0.03759340464156993,
+    "rougeL": 0.6666666666666666,
+    "cosine_similarity": 0.7745436429977417
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "reference": "Leonardo da Vinci",
+    "prediction": "The Mona Lisa was painted by Leonardo da Vinci.",
+    "exact_match": false,
+    "bleu": 0.12867201458772706,
+    "rougeL": 0.5,
+    "cosine_similarity": 0.6572595834732056
+  },
+  {
+    "question": "What is the square root of 144?",
+    "reference": "12",
+    "prediction": "12",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0000001192092896
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 60.0,
+  "bleu (avg)": 0.566,
+  "rougeL (avg)": 0.8467,
+  "cosine_similarity (avg)": 0.9161999821662903,
+  "bert_score_f1 (avg)": 0.685
+}

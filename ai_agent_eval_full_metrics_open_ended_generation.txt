@@ -1,0 +1,134 @@
+=== Detailed Evaluation Results ===
+
+[
+  {
+    "question": "Write a haiku about autumn",
+    "reference": "Leaves fall in silence / Crisp air warms the golden earth / Autumn whispers calm",
+    "prediction": "Leaves falling gently,\nCrisp air and colorful trees,\nAutumn has arrived.",
+    "exact_match": false,
+    "bleu": 0.04568772646936054,
+    "rougeL": 0.41666666666666663,
+    "cosine_similarity": 0.7198314666748047,
+    "agent_score": 4,
+    "agent_feedback": "Score: 4\nExplanation: The model prediction is mostly correct and captures the essence of an autumn haiku. It includes elements such as leaves falling, crisp air, and trees changing color, which are common features in autumn. However, there is a slight lack of clarity and depth compared to the reference answer. For example, the reference answer mentions \"autumn whispers calm,\" which adds a layer of meaning and imagery that is not present in the model prediction. Overall, the model's output is good but could benefit from more detail and context.",
+    "bert_score_f1": 0.34940609335899353
+  },
+  {
+    "question": "Describe your ideal vacation",
+    "reference": "Relaxing on a beach with books and sunshine",
+    "prediction": "My ideal vacation would be a tropical getaway to a secluded island, where I can relax on the pristine white sand beach, swim in crystal clear turquoise waters and bask in the warmth of the sun. The days would be spent exploring the lush foliage, snorkelling amongst colorful coral reefs, and indulging in fresh seafood cuisine while sipping on exotic cocktails. At night, I'd unwind by the bonfire on the beach, gazing up at the starry sky. This would be the perfect way to escape from the hustle and bustle of everyday life and recharge both physically and mentally.",
+    "exact_match": false,
+    "bleu": 0.004399896942234801,
+    "rougeL": 0.07407407407407407,
+    "cosine_similarity": 0.6494130492210388,
+    "agent_score": 4,
+    "agent_feedback": "### Response:\nScore: 4\nExplanation: The model prediction provides a comprehensive and vivid description of an ideal vacation that covers various aspects such as relaxation, adventure, and entertainment. The use of descriptive language paints a clear picture of the tropical paradise, making it almost feel real. However, while the reference answer mentions books and sunshine, the model prediction does not mention them explicitly, which could be considered a slight missing detail. Nevertheless, the overall quality of the model's response is excellent.",
+    "bert_score_f1": -0.003500894643366337
+  },
+  {
+    "question": "Write a motivational quote for students",
+    "reference": "Believe in your power to learn and grow every day",
+    "prediction": "\"Education is the most powerful weapon which you can use to change the world.\" - Nelson Mandela",
+    "exact_match": false,
+    "bleu": 0.013038525962482981,
+    "rougeL": 0.15384615384615385,
+    "cosine_similarity": 0.4579392671585083,
+    "agent_score": 4,
+    "agent_feedback": "Score: 4\nExplanation: While the reference answer and model prediction both convey positive motivational sentiments, they are different in content. The reference answer emphasizes personal growth and learning potential, whereas the model prediction focuses on using education as a tool for change. Both answers are factually correct and clear, but they do not directly compare or contrast with each other. Therefore, I would give the model prediction a score of 4 out of 5 for its motivational quality and accuracy.",
+    "bert_score_f1": 0.04896202310919762
+  },
+  {
+    "question": "Suggest a creative birthday gift",
+    "reference": "Personalized photo album of shared memories",
+    "prediction": "A personalized photo album or scrapbook, filled with pictures and mementos special to the recipient.",
+    "exact_match": false,
+    "bleu": 0.034430441335820114,
+    "rougeL": 0.28571428571428575,
+    "cosine_similarity": 0.673192024230957,
+    "agent_score": 4,
+    "agent_feedback": "Score: 4\nExplanation: The model prediction correctly captures the essential idea of a personalized photo album as a birthday gift, but it could be more specific and descriptive. For example, mentioning that the album could contain photos of shared memories or that it could be customized with special messages or quotes would make the answer more complete and clear. Overall, the model's performance is decent, but there is room for improvement in terms of detail and clarity.",
+    "bert_score_f1": 0.3575355112552643
+  },
+  {
+    "question": "Describe a futuristic city",
+    "reference": "Skyscrapers powered by sunlight hover above green rooftop gardens",
+    "prediction": "A futuristic city would be a bustling metropolis, filled with towering skyscrapers made of advanced materials that shimmer in the bright sunlight. The streets would be clean and well-maintained, with robotic trash cans and street sweepers constantly at work. The city's populace would be diverse, with people from all walks of life coexisting peacefully.\n\n### Transportation would be highly advanced, with flying cars and trains zipping through the air. The city would have an efficient public transportation system, with hover buses and subway systems that get people where they need to go quickly and easily.\n\n### The city would also boast state-of-the-art technology, with smart homes, buildings, and infrastructure that is connected and controlled through a central network. People would be able to control the temperature, lighting, and security of their homes with their smartphones, and everyday tasks like paying bills or ordering grocer",
+    "exact_match": false,
+    "bleu": 0.002598791794042851,
+    "rougeL": 0.03846153846153846,
+    "cosine_similarity": 0.3089560270309448,
+    "agent_score": 4,
+    "agent_feedback": "### Answer:\nScore: 4\nExplanation: The model-generated answer provides a comprehensive and descriptive futuristic city, which is quite close to the reference answer. It accurately identifies key features such as advanced technology, clean streets, diverse population, flying transportation, smart homes, and efficient public transportation systems. However, the description lacks some specificity in terms of the number of skyscrapers or green rooftop gardens, which were present in the reference answer. Overall, the model-generated answer is a good approximation of a futuristic city, but it could benefit from more specific details and a clearer comparison with the reference answer.",
+    "bert_score_f1": -0.12923820316791534
+  },
+  {
+    "question": "Write a joke about computers",
+    "reference": "Why did the computer go to therapy? It had too many bytes of self-doubt.",
+    "prediction": "Why was the computer cold at work? It left its Windows open.",
+    "exact_match": false,
+    "bleu": 0.055983342725528316,
+    "rougeL": 0.2962962962962963,
+    "cosine_similarity": 0.35695502161979675,
+    "agent_score": 2,
+    "agent_feedback": "Score: 2\nExplanation: The model prediction is a different joke that doesn't relate to the question intent. While it's a valid joke, it's not related to the original question.",
+    "bert_score_f1": 0.35416460037231445
+  },
+  {
+    "question": "Describe a childhood moment",
+    "reference": "Catching fireflies on a summer night",
+    "prediction": "One of my fondest memories from childhood was a Christmas tree decorated with handmade ornaments. Every year, my family and I would spend hours decorating the tree together, each of us making our own ornament to hang on it. There were homemade paper snowflakes, crocheted stars, and even a few glass ornaments that we made by painting old jars. As we hung each one on the tree, we would marvel at how beautiful and unique our creation was. The love and care that went into making each ornament was evident in the final result, creating a warm and meaningful tree that brought joy to our home during the holiday season.",
+    "exact_match": false,
+    "bleu": 0.0034102110813894015,
+    "rougeL": 0.034482758620689655,
+    "cosine_similarity": 0.1971774697303772,
+    "agent_score": 3,
+    "agent_feedback": "### Model Response:\nScore: 3\nExplanation: The model's answer describes a different childhood memory than the reference answer but does bring up a heartwarming holiday memory. It explains the effort and care put into making homemade ornaments for the Christmas tree, highlighting the creativity and love that went into each one. However, it doesn't mention any specific details about the location, time of year, or family members involved in this activity, which makes it less complete than the reference answer.",
+    "bert_score_f1": -0.07461711764335632
+  },
+  {
+    "question": "Pitch a smart water bottle",
+    "reference": "Bottle reminds you to drink and tracks intake via app",
+    "prediction": "Introducing our \"Smart Water Bottle\" - the perfect combination of style, function and technology! Keep yourself hydrated throughout the day with our sleek and durable design that fits comfortably in your hand. Our Smart Water Bottle features an innovative built-in system that tracks your water intake, helping you stay on top of your hydration goals. With its easy to use interface, you can set reminders and receive alerts to take a sip. Plus, our bottle is made with eco-friendly materials, so you can feel good about doing your part for the environment. Stay hydrated, save money, and help the planet - all with our Smart Water Bottle!",
+    "exact_match": false,
+    "bleu": 0.004456569047927699,
+    "rougeL": 0.06837606837606837,
+    "cosine_similarity": 0.6082857847213745,
+    "agent_score": 5,
+    "agent_feedback": "### Response:\nScore: 5\nExplanation: The model prediction perfectly matches the reference answer in terms of factual correctness, completeness and clarity. It effectively highlights the key features of the smart water bottle - its sleek design, durable construction, tracking capability, easy to use interface with reminders and alerts, and eco-friendliness. The language used is clear, concise, and engaging, making it an excellent answer to the question.",
+    "bert_score_f1": 0.11877613514661789
+  },
+  {
+    "question": "Team-building activity for remote teams?",
+    "reference": "Virtual escape room requiring collaboration",
+    "prediction": "Virtual Escape Room - It is an exciting way for remote teams to bond and work together, even from different locations.",
+    "exact_match": false,
+    "bleu": 0.011603982212675388,
+    "rougeL": 0.24,
+    "cosine_similarity": 0.764335572719574,
+    "agent_score": 4,
+    "agent_feedback": "Score: 4\nExplanation: The model prediction is factually correct and complete, as it accurately describes a virtual escape room as a team-building activity for remote teams. However, the clarity of the answer could be improved to better differentiate it from other types of virtual events.",
+    "bert_score_f1": 0.35447996854782104
+  },
+  {
+    "question": "Express gratitude to a teacher",
+    "reference": "Thank you for inspiring and believing in me every day",
+    "prediction": "Thank you for all the hard work and dedication you put into teaching us. You've been such an amazing teacher, and we're so grateful for everything you've done.",
+    "exact_match": false,
+    "bleu": 0.03990047283668225,
+    "rougeL": 0.1951219512195122,
+    "cosine_similarity": 0.4766538441181183,
+    "agent_score": 4,
+    "agent_feedback": "### Model Prediction:\nScore: 4\nExplanation: The model prediction accurately conveys gratitude towards the teacher and acknowledges their hard work and dedication. However, the reference answer is more personal and specific in expressing gratitude, which makes it slightly better. Therefore, a score of 4 is appropriate for this model prediction.",
+    "bert_score_f1": 0.34225597977638245
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 0.0,
+  "bleu (avg)": 0.0216,
+  "rougeL (avg)": 0.1803,
+  "cosine_similarity (avg)": 0.5213000178337097,
+  "bert_score_f1 (avg)": 0.1718,
+  "agent_score (avg)": 3.8
+}

@@ -1,0 +1,102 @@
+=== Detailed Results ===
+[
+  {
+    "question": "If all cats are animals and some animals are dogs, can some cats be dogs?",
+    "reference": "No",
+    "prediction": "No, a cat cannot be a dog. They belong to different species.",
+    "exact_match": false,
+    "bleu": 0.01571523700545522,
+    "rougeL": 0.15384615384615385,
+    "cosine_similarity": 0.10276387631893158
+  },
+  {
+    "question": "John is taller than Mary, and Mary is taller than Alice. Who is the tallest?",
+    "reference": "John",
+    "prediction": "John",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0
+  },
+  {
+    "question": "If it takes 3 workers 6 hours to complete a task, how long for 6 workers?",
+    "reference": "3 hours",
+    "prediction": "2 hours",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.5,
+    "cosine_similarity": 0.9039867520332336
+  },
+  {
+    "question": "A train travels 60 km in 1 hour. How far in 3.5 hours?",
+    "reference": "210 km",
+    "prediction": "210 km",
+    "exact_match": true,
+    "bleu": 0.2213885886251307,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0
+  },
+  {
+    "question": "If eggs cost 5 for $1, how much for 15?",
+    "reference": "$3",
+    "prediction": "7.50",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.40914463996887207
+  },
+  {
+    "question": "Two cars travel east and north at 60 km/h for 1 hour. How far apart are they?",
+    "reference": "84.85 km",
+    "prediction": "0 kilometers (since they started at the same location)",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.56439208984375
+  },
+  {
+    "question": "You have a 3L and 5L jug. How to measure 4L?",
+    "reference": "Use water transfer to leave 4L in the 5L jug",
+    "prediction": "Fill the 3L jug, then pour it into the 5L jug. Fill the 3L jug again, then pour it into the 5L jug until the 5L jug is full. At this point, there will be exactly 1L of water left in the 3L jug. Empty the 5L jug, then pour the remaining 1L from the 3L jug into the now-empty 5L jug. Fill the 3L jug again, and pour it into the 5L jug (which currently has 1L of water). The 5L jug now contains exactly 4L of water.",
+    "exact_match": false,
+    "bleu": 0.016902705989444954,
+    "rougeL": 0.09999999999999999,
+    "cosine_similarity": 0.7017178535461426
+  },
+  {
+    "question": "What comes next: 2, 4, 8, 16?",
+    "reference": "32",
+    "prediction": "28",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.813052773475647
+  },
+  {
+    "question": "If a > b and b > c, is a > c?",
+    "reference": "Yes",
+    "prediction": "False",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.20575310289859772
+  },
+  {
+    "question": "A man has 4 sons, each has one sister. How many children?",
+    "reference": "5",
+    "prediction": "5",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0000001192092896
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 30.0,
+  "bleu (avg)": 0.2322,
+  "rougeL (avg)": 0.3754,
+  "cosine_similarity (avg)": 0.6700999736785889,
+  "bert_score_f1 (avg)": 0.6805
+}

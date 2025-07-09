@@ -1,0 +1,102 @@
+=== Detailed Results ===
+[
+  {
+    "question": "Write a haiku about autumn",
+    "reference": "Leaves fall in silence / Crisp air warms the golden earth / Autumn whispers calm",
+    "prediction": "Crisp air turns leaves gold, Autumn's symphony begins, Nature's quilt unfurls.",
+    "exact_match": false,
+    "bleu": 0.04030833724870907,
+    "rougeL": 0.23076923076923078,
+    "cosine_similarity": 0.638614296913147
+  },
+  {
+    "question": "Describe your ideal vacation",
+    "reference": "Relaxing on a beach with books and sunshine",
+    "prediction": "My ideal vacation would be a tropical paradise getaway, where I can relax on the white sandy beach, soak up the sun, and enjoy the clear blue waters. I would love to explore the local culture, try out delicious foods, and perhaps take part in some adventurous activities like snorkeling or scuba diving. The key for me is to disconnect from the stresses of everyday life and simply enjoy the beauty and serenity of nature.",
+    "exact_match": false,
+    "bleu": 0.005592513172743471,
+    "rougeL": 0.0963855421686747,
+    "cosine_similarity": 0.5710810422897339
+  },
+  {
+    "question": "Write a motivational quote for students",
+    "reference": "Believe in your power to learn and grow every day",
+    "prediction": "\"Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.\"",
+    "exact_match": false,
+    "bleu": 0.026748503191801554,
+    "rougeL": 0.19354838709677416,
+    "cosine_similarity": 0.2901533246040344
+  },
+  {
+    "question": "Suggest a creative birthday gift",
+    "reference": "Personalized photo album of shared memories",
+    "prediction": "How about a personalized photo book or canvas print of your favorite memories with the recipient? Or, you could create a custom scavenger hunt for them and include clues leading to their favorite places in the city.",
+    "exact_match": false,
+    "bleu": 0.0096250098981501,
+    "rougeL": 0.18604651162790697,
+    "cosine_similarity": 0.5637000203132629
+  },
+  {
+    "question": "Describe a futuristic city",
+    "reference": "Skyscrapers powered by sunlight hover above green rooftop gardens",
+    "prediction": "Imagine a city that seamlessly blends advanced technology with lush greenery, where towering skyscrapers are covered in vertical gardens and rooftop solar panels. The streets are bustling with electric vehicles and drones delivering goods, while people wear smart glasses that allow them to interact with holographic advertisements and virtual assistants. The city's center is a massive, interactive hologram that changes based on the time of day and the season, projecting stunning visuals and animations onto the surrounding buildings. At night, the city glows with neon lights and holographic billboards, creating a mesmerizing display. Despite its futuristic appearance, the city prioritizes sustainability, using renewable energy sources and implementing green infrastructure to reduce its carbon footprint. Citizens of this city enjoy a high quality of life, with access to top-notch healthcare, education, and entertainment. This is a place where innovation",
+    "exact_match": false,
+    "bleu": 0.0030342401510960897,
+    "rougeL": 0.026845637583892613,
+    "cosine_similarity": 0.5163108706474304
+  },
+  {
+    "question": "Write a joke about computers",
+    "reference": "Why did the computer go to therapy? It had too many bytes of self-doubt.",
+    "prediction": "Why did the computer go to the doctor? Because it had a virus!",
+    "exact_match": false,
+    "bleu": 0.3254777991021599,
+    "rougeL": 0.5714285714285715,
+    "cosine_similarity": 0.5534381866455078
+  },
+  {
+    "question": "Describe a childhood moment",
+    "reference": "Catching fireflies on a summer night",
+    "prediction": "One of my fondest memories from childhood is playing with my friends in the woods behind my house. We would spend hours running around, building forts, and exploring nature. The smell of fresh pine trees and the sound of birds chirping always filled our senses. We would pretend we were on a grand adventure, and each day was filled with new discoveries. Sometimes, we would even have imaginary battles with each other, using sticks as swords and leaves as shields. Those moments in the woods taught me how to be creative, adventurous, and how to cherish the beauty of nature.",
+    "exact_match": false,
+    "bleu": 0.006166767619941231,
+    "rougeL": 0.03773584905660377,
+    "cosine_similarity": 0.2530457377433777
+  },
+  {
+    "question": "Pitch a smart water bottle",
+    "reference": "Bottle reminds you to drink and tracks intake via app",
+    "prediction": "Introducing the SmartWaterBottle - your perfect hydration companion! Our sleek and stylish water bottle keeps you hydrated all day long. It's equipped with state-of-the-art technology that tracks your water intake and reminds you to drink more water throughout the day. With its leak-proof design and easy-to-clean materials, you can focus on staying healthy and hydrated without worrying about a thing. Get yours today and stay hydrated all day!",
+    "exact_match": false,
+    "bleu": 0.03463978897835301,
+    "rougeL": 0.14285714285714288,
+    "cosine_similarity": 0.5400457382202148
+  },
+  {
+    "question": "Team-building activity for remote teams?",
+    "reference": "Virtual escape room requiring collaboration",
+    "prediction": "Virtual escape rooms!\n\nVirtual escape rooms are a fun and engaging team-building activity for remote teams. They offer an interactive, problem-solving experience that requires teamwork, communication, and collaboration to complete the challenge. Participants work together to solve puzzles, riddles, and clues in order to \"escape\" from a virtual room or scenario. This activity can be tailored to suit your team's interests, strengths, and weaknesses, making it a great way to foster team spirit and build stronger relationships among remote colleagues.",
+    "exact_match": false,
+    "bleu": 0.00850247712895202,
+    "rougeL": 0.11363636363636363,
+    "cosine_similarity": 0.7975718379020691
+  },
+  {
+    "question": "Express gratitude to a teacher",
+    "reference": "Thank you for inspiring and believing in me every day",
+    "prediction": "Dear Teacher, I just wanted to take a moment to express my sincere gratitude for all that you have done for me. Your patience, support and dedication have been instrumental in shaping the person I am today. Thank you for being such an amazing teacher and role model.",
+    "exact_match": false,
+    "bleu": 0.028694328961304638,
+    "rougeL": 0.13793103448275862,
+    "cosine_similarity": 0.49768656492233276
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 0.0,
+  "bleu (avg)": 0.0489,
+  "rougeL (avg)": 0.1737,
+  "cosine_similarity (avg)": 0.5221999883651733,
+  "bert_score_f1 (avg)": 0.1757
+}

@@ -1,0 +1,102 @@
+=== Detailed Results ===
+[
+  {
+    "question": "What is 48 divided by 6?",
+    "reference": "8",
+    "prediction": "8",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0000001192092896
+  },
+  {
+    "question": "A car travels 60 km in 30 minutes. Speed in km/h?",
+    "reference": "120 km/h",
+    "prediction": "120",
+    "exact_match": false,
+    "bleu": 0.36787944117144233,
+    "rougeL": 0.5,
+    "cosine_similarity": 0.49264049530029297
+  },
+  {
+    "question": "What is 15% of 200?",
+    "reference": "30",
+    "prediction": "30",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0
+  },
+  {
+    "question": "Solve for x: 2x+3=11",
+    "reference": "4",
+    "prediction": "-5",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.4614432454109192
+  },
+  {
+    "question": "What is 7 factorial?",
+    "reference": "5040",
+    "prediction": "5040",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0
+  },
+  {
+    "question": "Solve: \u221a81 + \u221a16",
+    "reference": "13",
+    "prediction": "3\u221a7",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.28309932351112366
+  },
+  {
+    "question": "If x=3, find 2x\u00b2+1",
+    "reference": "19",
+    "prediction": "9",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.5533956289291382
+  },
+  {
+    "question": "Compute 0.75 \u00d7 0.4",
+    "reference": "0.3",
+    "prediction": "0.3",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0
+  },
+  {
+    "question": "Sum of first five natural numbers?",
+    "reference": "15",
+    "prediction": "15",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0
+  },
+  {
+    "question": "If y=2, solve y\u00b3 - y",
+    "reference": "6",
+    "prediction": "2",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.6696946620941162
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 50.0,
+  "bleu (avg)": 0.5368,
+  "rougeL (avg)": 0.55,
+  "cosine_similarity (avg)": 0.7459999918937683,
+  "bert_score_f1 (avg)": 0.7194
+}
