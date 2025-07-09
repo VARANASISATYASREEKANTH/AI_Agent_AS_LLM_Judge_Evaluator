@@ -1,4 +1,4 @@
-# AI_Agent_AS_LLM_Judge_Evaluator
+# AI_Agent_AS_LLM_Judge_Evaluator(🛠 In Progress: Will be updated soon)
 Using AI Agent as LLM Judge Evaluator
 <table border="1" cellpadding="8" cellspacing="0">
   <thead>
@@ -12,33 +12,33 @@ Using AI Agent as LLM Judge Evaluator
   <tbody>
     <tr>
       <td>Exact Match</td>
-      <td>User login &amp; signup</td>
-      <td>✅ Done</td>
-      <td>Supports OAuth</td>
+      <td>  🛠 In Progress </td>
+      <td>  🛠 In Progress</td>
+      <td> 🛠 In Progress </td>
     </tr>
     <tr>
       <td>BLEU(avg)</td>
-      <td>Main UI components</td>
       <td>🛠 In Progress</td>
-      <td>Needs polishing</td>
+      <td>🛠 In Progress</td>
+      <td>🛠 In Progress</td>
     </tr>
     <tr>
       <td>ROUGE L(avg)</td>
-      <td>RESTful endpoints</td>
-      <td>✅ Done</td>
-      <td>Version 1.0 stable</td>
+      <td>🛠 In Progress</td>
+      <td>🛠 In Progress</td>
+      <td>🛠 In Progress</td>
     </tr>
     <tr>
       <td>Cosine similarity</td>
-      <td>CI/CD Integration</td>
-      <td>❌ Pending</td>
-      <td>Needs server config</td>
+      <td>🛠 In Progress</td>
+      <td>🛠 In Progress</td>
+      <td>🛠 In Progress</td>
     </tr>
     <tr>
-      <td>BERT-f_1 score</td>
-      <td>CI/CD Integration</td>
-      <td>❌ Pending</td>
-      <td>Needs server config</td>
+      <td>BERT-f_1 score </td>
+      <td>🛠 In Progress </td>
+      <td>🛠 In Progress</td>
+      <td>🛠 In Progress</td>
     </tr>
 
 
