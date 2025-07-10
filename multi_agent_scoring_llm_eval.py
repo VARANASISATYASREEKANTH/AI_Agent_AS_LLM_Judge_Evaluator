@@ -25,9 +25,21 @@ judge_models = {
 
 # === Evaluation Data ===
 eval_data = [
-    {"question": "What is the capital of France?", "answer": "Paris"},
-    {"question": "Who wrote Romeo and Juliet?", "answer": "William Shakespeare"},
-    {"question": "What is the chemical formula of water?", "answer": "H2O"},
+ {"question": "If all cats are animals and some animals are dogs, can some cats be dogs?", "answer": "No"},
+  {"question": "John is taller than Mary, and Mary is taller than Alice. Who is the tallest?", "answer": "John"},
+  {"question": "If it takes 3 workers 6 hours to complete a task, how long for 6 workers?", "answer": "3 hours"},
+  {"question": "A train travels 60 km in 1 hour. How far in 3.5 hours?", "answer": "210 km"},
+  {"question": "If eggs cost 5 for $1, how much for 15?", "answer": "$3"},
+  {"question": "Two cars travel east and north at 60 km/h for 1 hour. How far apart are they?", "answer": "84.85 km"},
+  {"question": "You have a 3L and 5L jug. How to measure 4L?", "answer": "Use water transfer to leave 4L in the 5L jug"},
+  {"question": "What comes next: 2, 4, 8, 16?", "answer": "32"},
+  {"question": "If a > b and b > c, is a > c?", "answer": "Yes"},
+  {"question": "A man has 4 sons, each has one sister. How many children?", "answer": "5"}
+
+
+
+
+
 ]
 
 # === Metric Tools ===
@@ -135,7 +147,7 @@ def safe_convert(obj):
     return str(obj) if not isinstance(obj, (dict, list, str, float, int)) else obj
 
 # === Save to File ===
-output_path = "C:/myworks/AI_Agent_AS_LLM_Judge_Evaluator/llm_multiagent_eval.txt"
+output_path = "C:/myworks/AI_Agent_AS_LLM_Judge_Evaluator/llm_multiagent_eval_LOGICAL_reasoning.txt"
 with open(output_path, "w", encoding="utf-8") as f:
     f.write("=== Per-Sample Results ===\n")
     f.write(json.dumps(results, indent=2, default=safe_convert))
@@ -144,7 +156,7 @@ with open(output_path, "w", encoding="utf-8") as f:
 
 # === 🎨 Visualization ===
 # Bar chart: per-question scores by each judge
-questions = [r["question"] for r in results]
+'''questions = [r["question"] for r in results]
 x = np.arange(len(questions))
 width = 0.25
 
@@ -158,7 +170,7 @@ plt.title("Judge Scores per Sample")
 plt.ylabel("Score (1–5)")
 plt.legend()
 plt.tight_layout()
-plt.savefig("C:/myworks/AI_Agent_AS_LLM_Judge_Evaluator/judge_scores_per_sample_bar_chart.pdf", bbox_inches="tight", dpi=900)
+plt.savefig("C:/myworks/AI_Agent_AS_LLM_Judge_Evaluator/judge_scores_per_sample_bar_chart_factual.pdf", bbox_inches="tight", dpi=900)
 plt.show()
 
 # Line chart: average score per judge
@@ -169,5 +181,5 @@ plt.title("Average Score per Judge")
 plt.ylabel("Score")
 plt.grid(True)
 plt.tight_layout()
-plt.savefig("C:/myworks/AI_Agent_AS_LLM_Judge_Evaluator/judge_avg_scores_bar_chart.pdf", bbox_inches="tight", dpi=900)
-plt.show()
+plt.savefig("C:/myworks/AI_Agent_AS_LLM_Judge_Evaluator/judge_avg_scores_bar_chart_factual.pdf", bbox_inches="tight", dpi=900)
+plt.show()'''

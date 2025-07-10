@@ -1,0 +1,134 @@
+=== Detailed Evaluation Results ===
+
+[
+  {
+    "question": "If all cats are animals and some animals are dogs, can some cats be dogs?",
+    "reference": "No",
+    "prediction": "No, because all cats are animals but not all animals are dogs.",
+    "exact_match": false,
+    "bleu": 0.01758542189440898,
+    "rougeL": 0.15384615384615385,
+    "cosine_similarity": 0.23761188983917236,
+    "agent_score": 4,
+    "agent_feedback": "### Response:\nScore: 4\nExplanation: The model's prediction is factually correct and complete. It correctly identifies that no cats can be dogs because all cats are animals but not all animals are dogs. However, the clarity of the explanation could be improved to better differentiate between the two statements.",
+    "bert_score_f1": -0.07255218178033829
+  },
+  {
+    "question": "John is taller than Mary, and Mary is taller than Alice. Who is the tallest?",
+    "reference": "John",
+    "prediction": "John",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0,
+    "agent_score": 5,
+    "agent_feedback": "Score: 5\nExplanation: Both the reference answer and the prediction are accurate, making this a perfect score. The question clearly states that John is taller than Mary, and Mary is taller than Alice, so it's clear that John is the tallest. The model correctly identifies and states this as well.",
+    "bert_score_f1": 0.9999992847442627
+  },
+  {
+    "question": "If it takes 3 workers 6 hours to complete a task, how long for 6 workers?",
+    "reference": "3 hours",
+    "prediction": "2 hours.",
+    "exact_match": false,
+    "bleu": 0.07249749990681824,
+    "rougeL": 0.5,
+    "cosine_similarity": 0.8419246077537537,
+    "agent_score": 4,
+    "agent_feedback": "Score: 4\nExplanation: The model's answer is factually correct but not complete. It provides an approximate time based on the number of workers without considering other factors like their efficiency or workload. This reduces its clarity and makes it less helpful than the reference answer.",
+    "bert_score_f1": 0.8964974284172058
+  },
+  {
+    "question": "A train travels 60 km in 1 hour. How far in 3.5 hours?",
+    "reference": "210 km",
+    "prediction": "210 km",
+    "exact_match": true,
+    "bleu": 0.2213885886251307,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0,
+    "agent_score": 5,
+    "agent_feedback": "Score: 5\nExplanation: The model's prediction is exactly the same as the reference answer. It correctly calculates the distance travelled in 3.5 hours based on the information given, showing a high level of accuracy, completeness, and clarity.",
+    "bert_score_f1": 1.0
+  },
+  {
+    "question": "If eggs cost 5 for $1, how much for 15?",
+    "reference": "$3",
+    "prediction": "$6",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.8138459920883179,
+    "agent_score": 4,
+    "agent_feedback": "Score: 4\nExplanation: The model prediction is factually correct that eggs cost $6 for 15, but it lacks clarity and completeness. It does not explain how the price was calculated or provide any context about the cost of eggs in general. Therefore, the reference answer is more comprehensive and provides a better explanation of the relationship between the number of eggs and their cost.",
+    "bert_score_f1": 0.7442800402641296
+  },
+  {
+    "question": "Two cars travel east and north at 60 km/h for 1 hour. How far apart are they?",
+    "reference": "84.85 km",
+    "prediction": "120 km",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.4,
+    "cosine_similarity": 0.8075919151306152,
+    "agent_score": 3,
+    "agent_feedback": "### Response:\nScore: 3\nExplanation: While the model prediction of 120 km is correct factually (the distance covered by two cars moving together in opposite directions), it is not complete or clear. The reference answer provides a more accurate representation of the situation, considering that the cars are moving along two different axes and not just one. Therefore, the model's prediction lacks clarity and completeness compared to the reference answer.",
+    "bert_score_f1": 0.6687595248222351
+  },
+  {
+    "question": "You have a 3L and 5L jug. How to measure 4L?",
+    "reference": "Use water transfer to leave 4L in the 5L jug",
+    "prediction": "Fill the 3L jug, then the 5L jug and empty the 3L jug again. Now you have exactly 1L left in the 3L jug and 5L in the 5L jug. Pour the 1L from the 3L jug into the 5L jug and you will have 6L in the 5L jug. Empty the 5L jug completely and pour its contents into the empty 3L jug. Now you have exactly 4L in the 3L jug (since you added 1L from the 5L jug).",
+    "exact_match": false,
+    "bleu": 0.03181011337094661,
+    "rougeL": 0.10989010989010987,
+    "cosine_similarity": 0.6423795819282532,
+    "agent_score": 2,
+    "agent_feedback": "### Answer:\nScore: 2\nExplanation: While the model prediction is technically correct, it requires unnecessary steps and is not efficient. The reference answer uses a single step of transferring water to achieve the desired result, whereas the model's solution involves multiple steps and wasteful emptying and pouring of jugs.",
+    "bert_score_f1": 0.19667942821979523
+  },
+  {
+    "question": "What comes next: 2, 4, 8, 16?",
+    "reference": "32",
+    "prediction": "28",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.813052773475647,
+    "agent_score": 3,
+    "agent_feedback": "Score: 3\nExplanation: The model's prediction is factually correct and provides a clear explanation of the pattern. However, it falls short of the reference answer by just one term. Given the relatively simple nature of this question, the model could have performed better in providing the exact reference answer.",
+    "bert_score_f1": 0.9983620643615723
+  },
+  {
+    "question": "If a > b and b > c, is a > c?",
+    "reference": "Yes",
+    "prediction": "False",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.20575310289859772,
+    "agent_score": 4,
+    "agent_feedback": "Score: 4\nExplanation: The model prediction is factually incorrect, but it provides a clear and complete explanation. The model correctly identifies that a > c does not necessarily mean a > b and b > c, which is why the answer is false. However, the model's reasoning is clear and easy to understand.",
+    "bert_score_f1": 0.9943554401397705
+  },
+  {
+    "question": "A man has 4 sons, each has one sister. How many children?",
+    "reference": "5",
+    "prediction": "5",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0000001192092896,
+    "agent_score": 5,
+    "agent_feedback": "Score: 5\nExplanation: The model-generated answer is identical to the reference answer. It correctly identifies that there are 5 children in total, with each son having one sister. Therefore, I give the score of 5 (excellent).",
+    "bert_score_f1": 1.0
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 30.0,
+  "bleu (avg)": 0.2478,
+  "rougeL (avg)": 0.4164,
+  "cosine_similarity (avg)": 0.7361999750137329,
+  "bert_score_f1 (avg)": 0.7426,
+  "agent_score (avg)": 3.9
+}

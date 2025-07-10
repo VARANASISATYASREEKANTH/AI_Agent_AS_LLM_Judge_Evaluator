@@ -1,0 +1,134 @@
+=== Detailed Evaluation Results ===
+
+[
+  {
+    "question": "If you buy 3 apples at $2 and 2 bananas at $1, total cost?",
+    "reference": "$8",
+    "prediction": "$5",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.8238047361373901,
+    "agent_score": 3,
+    "agent_feedback": "Score: 3\nExplanation: The model prediction is factually correct that the total cost of buying 3 apples at $2 and 2 bananas at $1 would be $5. However, it lacks completeness as it does not include tax or any other additional costs that might apply in some contexts. Additionally, the language used in the model prediction is not clear enough to convey the same level of clarity as the reference answer, which could lead to confusion for users who are not familiar with the specific pricing structure mentioned in the question. Therefore, a score of 3 out of 5 seems appropriate.",
+    "bert_score_f1": 0.7579286694526672
+  },
+  {
+    "question": "Car goes 150km at 50km/h, 100km at 25km/h. Average speed?",
+    "reference": "50 km/h",
+    "prediction": "30 km/h",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.6666666666666666,
+    "cosine_similarity": 0.9077296257019043,
+    "agent_score": 2,
+    "agent_feedback": "### Response:\nScore: 2\nExplanation: The model prediction is partially correct but not complete. It only provides one possible average speed based on the given information, while the reference answer correctly identifies the average speed as 50 km/h.",
+    "bert_score_f1": 0.9356468319892883
+  },
+  {
+    "question": "Book is $15, 20% off, then 10% tax. Final price?",
+    "reference": "$13.20",
+    "prediction": "$15",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.8068364262580872,
+    "agent_score": 3,
+    "agent_feedback": "---\nScore: 3\nExplanation: The model's answer is partially correct, but it lacks clarity and completeness. It does not provide a discount calculation for the 20% off offer, leaving that part of the calculation unclear. It only presents the final price as $15 without any explanation of how that number was arrived at. This makes it difficult to understand the reasoning behind the answer.",
+    "bert_score_f1": 0.5437111854553223
+  },
+  {
+    "question": "$1000 at 5% simple interest for 2 years. Interest?",
+    "reference": "$200 total",
+    "prediction": "$125",
+    "exact_match": false,
+    "bleu": 0.04096772609215166,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.6387977600097656,
+    "agent_score": 3,
+    "agent_feedback": "Score: 3\nExplanation: The model prediction is close to the reference answer but has a small error. It's important for clarity that the reference answer uses \"total\" instead of \"interest\", which might have caused confusion in the model's output.\n 1000 at 5% simple interest for 2 years = $200 total\n$200 / $1000 = 0.2\nMultiply 0.2 by 1000 to get $200\nSo, the model's output should be closer to the reference answer and it's important to clarify that \"total\" means the total amount after the interest is calculated, not just the interest itself.",
+    "bert_score_f1": 0.25695571303367615
+  },
+  {
+    "question": "2 cups flour per loaf, have 7 cups. Max loaves?",
+    "reference": "3 loaves",
+    "prediction": "3.5",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.5,
+    "cosine_similarity": 0.2765375077724457,
+    "agent_score": 4,
+    "agent_feedback": "Score: 4\nExplanation: The model prediction is very close to the reference answer, with a slight error of 0.5. However, the reasoning provided by the model is not clear and concise, which could make it difficult for a user to understand.",
+    "bert_score_f1": 0.0977993756532669
+  },
+  {
+    "question": "Walk 4 km in 1h, run 6 km in 30min. Average speed?",
+    "reference": "6.67 km/h",
+    "prediction": "24 km/h",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.5714285714285715,
+    "cosine_similarity": 0.825892984867096,
+    "agent_score": 3,
+    "agent_feedback": "Score: 3\nExplanation: While the model prediction is technically correct (it calculates the average speed correctly), it's not practical or realistic for an average person to walk 4 km in 1 hour and run 6 km in 30 minutes. The reference answer is more reasonable and accurate given the context of a typical person's walking and running speeds.",
+    "bert_score_f1": 0.7794094085693359
+  },
+  {
+    "question": "If 1=A, 2=B, what is 3\u20131\u201320?",
+    "reference": "CAT",
+    "prediction": "-19",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.18841972947120667,
+    "agent_score": 1,
+    "agent_feedback": "Score: 1\nExplanation: The model prediction is completely off and doesn't even make sense. It doesn't answer the question at all.",
+    "bert_score_f1": 0.2598894238471985
+  },
+  {
+    "question": "Split $100 in 1:2:3 ratio. What does B get?",
+    "reference": "$33.33",
+    "prediction": "$30",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.7659558057785034,
+    "agent_score": 2,
+    "agent_feedback": "Score: 2\nExplanation: The model's prediction is partially correct but not a valid answer to the question. It doesn't show how to split $100 according to the ratio of 1:2:3. Additionally, the result ($30) isn't even close to the reference answer ($33.33).",
+    "bert_score_f1": 0.3868253529071808
+  },
+  {
+    "question": "Train leaves at 8AM, arrives 240km away at 11AM. On time?",
+    "reference": "Yes",
+    "prediction": "False",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.20575310289859772,
+    "agent_score": 3,
+    "agent_feedback": "Score: 3\nExplanation: The model prediction is technically correct in stating that the train arrival time was not on schedule. However, it fails to recognize the context of the question and the fact that the journey duration was 240km long. This implies that the train traveled at a constant speed without any stops or delays, which is unlikely in reality. Therefore, the model's answer could be improved by considering additional factors such as traffic conditions, weather, and other potential disruptions that may affect the train's travel time.",
+    "bert_score_f1": 0.9943547248840332
+  },
+  {
+    "question": "Save 10% per month from $100. After 3 months?",
+    "reference": "$72.90",
+    "prediction": "$90",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.6666666666666666,
+    "cosine_similarity": 0.7711319923400879,
+    "agent_score": 3,
+    "agent_feedback": "### Answer:\nScore: 3\nExplanation: The model's prediction is mathematically correct, but it fails to provide a clear and complete answer. It should have mentioned that the calculation assumes no changes in expenses or income for those three months. Therefore, it could not save $10% per month. Thus, the reference answer ($72.90) represents the correct amount saved after 3 months at the assumed rate of savings without any other adjustments made in income or expenses.",
+    "bert_score_f1": 0.5184721350669861
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 0.0,
+  "bleu (avg)": 0.0446,
+  "rougeL (avg)": 0.2405,
+  "cosine_similarity (avg)": 0.6211000084877014,
+  "bert_score_f1 (avg)": 0.5531,
+  "agent_score (avg)": 2.7
+}

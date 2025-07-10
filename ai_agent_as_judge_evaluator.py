@@ -22,18 +22,17 @@ model = AutoModelForCausalLM.from_pretrained(
 
 # === Sample Evaluation Data ===
 eval_data = [
-  {"question": "Write Python code to swap variables a and b", "answer": "a, b = b, a"},
-  {"question": "Define a function to add two numbers", "answer": "def add(x, y): return x + y"},
-  {"question": "Write a loop to print numbers 1–5", "answer": "for i in range(1,6): print(i)"},
-  {"question": "Reverse a string s in Python", "answer": "s[::-1]"},
-  {"question": "List comprehension for squares 1–5", "answer": "[i**2 for i in range(1,6)]"},
-  {"question": "Check if number is even", "answer": "n % 2 == 0"},
-  {"question": "Read a file and print lines", "answer": "with open('file.txt') as f: print(f.read())"},
-  {"question": "Create dictionary with keys a, b", "answer": "{'a':1, 'b':2}"},
-  {"question": "Convert list to set", "answer": "set(my_list)"},
-  {"question": "Add x to list lst", "answer": "lst.append(x)"}
 
-
+ {"question": "What is the capital of Australia?", "answer": "Canberra"},
+  {"question": "Who discovered penicillin?", "answer": "Alexander Fleming"},
+  {"question": "What is the boiling point of water in Celsius?", "answer": "100°C"},
+  {"question": "When did World War II end?", "answer": "1945"},
+  {"question": "What is the chemical symbol for gold?", "answer": "Au"},
+  {"question": "Who wrote 'To Kill a Mockingbird'?", "answer": "Harper Lee"},
+  {"question": "What planet is known as the Red Planet?", "answer": "Mars"},
+  {"question": "What is the largest mammal on Earth?", "answer": "Blue whale"},
+  {"question": "Who painted the Mona Lisa?", "answer": "Leonardo da Vinci"},
+  {"question": "What is the square root of 144?", "answer": "12"}
 
 ]
 
@@ -144,7 +143,7 @@ def safe_convert(obj):
     return str(obj) if not isinstance(obj, (dict, list, str, float, int)) else obj
 
 # === Save Results to File ===
-output_file = "C:/myworks/AI_Agent_AS_LLM_Judge_Evaluator/ai_agent_eval_full_metrics_code_generation.txt"
+output_file = "C:/myworks/AI_Agent_AS_LLM_Judge_Evaluator/ai_agent_eval_factual_reasoning.txt"
 os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
 with open(output_file, "w", encoding="utf-8") as f:

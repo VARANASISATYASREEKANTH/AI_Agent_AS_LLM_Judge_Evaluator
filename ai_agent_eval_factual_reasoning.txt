@@ -1,0 +1,134 @@
+=== Detailed Evaluation Results ===
+
+[
+  {
+    "question": "What is the capital of Australia?",
+    "reference": "Canberra",
+    "prediction": "Canberra",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0,
+    "agent_score": 5,
+    "agent_feedback": "Score: 5\nExplanation: The model generated answer is identical to the reference answer, indicating excellent factual accuracy. It clearly states the capital of Australia.",
+    "bert_score_f1": 1.0000007152557373
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "reference": "Alexander Fleming",
+    "prediction": "Sir Alexander Fleming",
+    "exact_match": false,
+    "bleu": 0.21177974141341938,
+    "rougeL": 0.8,
+    "cosine_similarity": 0.9051704406738281,
+    "agent_score": 5,
+    "agent_feedback": "Score: 5\nExplanation: The model prediction matches the reference answer perfectly. It is a factually correct and complete response that clearly states who discovered penicillin.",
+    "bert_score_f1": 0.5587880611419678
+  },
+  {
+    "question": "What is the boiling point of water in Celsius?",
+    "reference": "100\u00b0C",
+    "prediction": "100 degrees Celsius or 212 degrees Fahrenheit",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.22222222222222224,
+    "cosine_similarity": 0.7680238485336304,
+    "agent_score": 4,
+    "agent_feedback": "Score: 4\nExplanation: The model prediction is factually correct and complete. It provides both the boiling point in Celsius and Fahrenheit, which is helpful for users who may prefer one unit of measurement over the other. However, the clarity of the response could be improved by providing a more concise answer, such as \"The boiling point of water is 100\u00b0C or 212\u00b0F.\"",
+    "bert_score_f1": 0.3090287148952484
+  },
+  {
+    "question": "When did World War II end?",
+    "reference": "1945",
+    "prediction": "September 2, 1945",
+    "exact_match": false,
+    "bleu": 0.061033220311973134,
+    "rougeL": 0.5,
+    "cosine_similarity": 0.8246480226516724,
+    "agent_score": 3,
+    "agent_feedback": "Score: 3\nExplanation: The model prediction is mostly factually correct, as it accurately identifies September 2, 1945 as the date of the official end of World War II. However, it fails to provide context about why this was the official end date, which would have been valuable additional information to users searching for the topic. Additionally, while the model's response is clear and concise, the clarity is not at its best due to a lack of detail in the explanation of the significance of September 2, 1945 as the official end of the war.",
+    "bert_score_f1": -0.07411032915115356
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "reference": "Au",
+    "prediction": "Au",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0,
+    "agent_score": 5,
+    "agent_feedback": "---\n\nScore: 5\nExplanation: The model correctly identifies the chemical symbol for gold as Au.",
+    "bert_score_f1": 1.0000007152557373
+  },
+  {
+    "question": "Who wrote 'To Kill a Mockingbird'?",
+    "reference": "Harper Lee",
+    "prediction": "Harper Lee",
+    "exact_match": true,
+    "bleu": 0.2213885886251307,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0,
+    "agent_score": 5,
+    "agent_feedback": "### Feedback for Model:\nScore: 5\nExplanation: The model generated a perfect answer to the question, providing the exact name of the author.",
+    "bert_score_f1": 1.0000007152557373
+  },
+  {
+    "question": "What planet is known as the Red Planet?",
+    "reference": "Mars",
+    "prediction": "Mars",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0000001192092896,
+    "agent_score": 5,
+    "agent_feedback": "Score: 5\nExplanation: The model prediction is identical to the reference answer. It correctly identifies the planet known as the Red Planet, which is Mars. The explanation provided is complete and factually correct. Therefore, the score is 5 (excellent).",
+    "bert_score_f1": 1.0
+  },
+  {
+    "question": "What is the largest mammal on Earth?",
+    "reference": "Blue whale",
+    "prediction": "Blue Whale",
+    "exact_match": true,
+    "bleu": 0.06754436142034707,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0,
+    "agent_score": 5,
+    "agent_feedback": "Model generated answer: Blue Whale.\nReference answer: Blue Whale.\n\nScore: 5\nExplanation: The model-generated answer is identical to the reference answer, which indicates that it is factually correct, complete and clear. This makes it an excellent answer.",
+    "bert_score_f1": 0.5581322312355042
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "reference": "Leonardo da Vinci",
+    "prediction": "Leonardo da Vinci",
+    "exact_match": true,
+    "bleu": 0.5757197301274735,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0000001192092896,
+    "agent_score": 5,
+    "agent_feedback": "Score: 5\nExplanation: The model prediction is identical to the reference answer. It accurately identifies Leonardo da Vinci as the painter of the Mona Lisa.",
+    "bert_score_f1": 0.9999996423721313
+  },
+  {
+    "question": "What is the square root of 144?",
+    "reference": "12",
+    "prediction": "3\u221a4 or sqrt(4)",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.2074938416481018,
+    "agent_score": null,
+    "agent_feedback": "Repeat for the next set of questions.",
+    "bert_score_f1": -0.10386104881763458
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 60.0,
+  "bleu (avg)": 0.4137,
+  "rougeL (avg)": 0.7522,
+  "cosine_similarity (avg)": 0.8705000281333923,
+  "bert_score_f1 (avg)": 0.6248,
+  "agent_score (avg)": 4.67
+}

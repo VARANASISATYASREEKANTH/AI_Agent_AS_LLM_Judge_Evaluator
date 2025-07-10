@@ -1,0 +1,134 @@
+=== Detailed Evaluation Results ===
+
+[
+  {
+    "question": "If you drop a glass, what will likely happen?",
+    "reference": "It will break",
+    "prediction": "The glass will likely shatter or crack.",
+    "exact_match": false,
+    "bleu": 0.028599617161713803,
+    "rougeL": 0.2,
+    "cosine_similarity": 0.5835911631584167,
+    "agent_score": 3,
+    "agent_feedback": "Example:\nScore: 3\nExplanation: While the model's prediction is mostly correct, it lacks specificity compared to the reference answer. The word \"shatter\" or \"crack\" is less specific than \"break.\"",
+    "bert_score_f1": 0.4602300822734833
+  },
+  {
+    "question": "Can you use a knife to eat soup?",
+    "reference": "No",
+    "prediction": "Yes, you can use a knife to eat soup.",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.14140819013118744,
+    "agent_score": 3,
+    "agent_feedback": "Score: 3\nExplanation: The model prediction is factually incorrect because knives are not typically used for eating soup. However, it is technically possible to eat soup with a knife by cutting it into small pieces and using the knife to scoop it up. Therefore, the reference answer is more accurate than the model prediction in this context.",
+    "bert_score_f1": 0.08657694607973099
+  },
+  {
+    "question": "If it\u2019s raining, what should you carry?",
+    "reference": "Umbrella",
+    "prediction": "An umbrella or a raincoat.",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.33333333333333337,
+    "cosine_similarity": 0.7260825634002686,
+    "agent_score": 4,
+    "agent_feedback": "### Response:\nScore: 4\nExplanation: The model prediction is mostly correct and covers the main point of carrying an umbrella or a raincoat when it's raining. However, it could be improved by providing more specific information about each option (e.g., when to use an umbrella vs raincoat) or mentioning additional items that might also be helpful in rainy weather, such as boots or a hat.",
+    "bert_score_f1": -0.02454299107193947
+  },
+  {
+    "question": "Can a cat drive a car?",
+    "reference": "No",
+    "prediction": "No, cats cannot drive a car. They lack the physical ability to operate a vehicle and do not have the cognitive skills to understand the rules of the road.",
+    "exact_match": false,
+    "bleu": 0.008588486560503192,
+    "rougeL": 0.06666666666666667,
+    "cosine_similarity": 0.09055709838867188,
+    "agent_score": 47,
+    "agent_feedback": "### Model Feedback:\nScore: 4.7 (Almost Excellent)\nExplanation: The model's prediction accurately states that cats cannot drive a car because of their lack of physical ability and cognitive skills to operate a vehicle and understand the rules of the road.",
+    "bert_score_f1": -0.025381749495863914
+  },
+  {
+    "question": "Why shouldn\u2019t you touch a hot stove?",
+    "reference": "It will burn you",
+    "prediction": "It\u2019s hot! You could get burned.",
+    "exact_match": false,
+    "bleu": 0.023457495174891017,
+    "rougeL": 0.36363636363636365,
+    "cosine_similarity": 0.5895419120788574,
+    "agent_score": 4,
+    "agent_feedback": "Score: 4\nExplanation: The model prediction is mostly correct and provides a clear explanation of why one should not touch a hot stove. However, it could have been more comprehensive by including additional details such as the severity of the burn or how to prevent getting burned when handling hot objects.",
+    "bert_score_f1": 0.3447630703449249
+  },
+  {
+    "question": "What happens if you don\u2019t water a plant?",
+    "reference": "It will wilt or die",
+    "prediction": "If you don\u2019t water a plant, it can become dehydrated or experience nutrient stress. This can cause the leaves to yellow and eventually fall off. The plant may also slow down its growth or even die. It\u2019s important to keep your plants properly hydrated to ensure their health and longevity.",
+    "exact_match": false,
+    "bleu": 0.006945772642390575,
+    "rougeL": 0.10526315789473685,
+    "cosine_similarity": 0.26241692900657654,
+    "agent_score": 40,
+    "agent_feedback": "### Model Feedback:\nScore: 4.0\nExplanation: The model-generated answer is factually correct and covers all possible consequences of not watering a plant, including yellowing leaves, slow growth, and death. However, it could be improved by providing more specific information on the time frame for these effects to occur or how much water is needed to prevent them.",
+    "bert_score_f1": 0.023277610540390015
+  },
+  {
+    "question": "If the power goes out, what won\u2019t work?",
+    "reference": "Electrical devices",
+    "prediction": "The internet.",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.22351594269275665,
+    "agent_score": 2,
+    "agent_feedback": "Score: 2\nExplanation: While the model's prediction is technically correct that the internet won't work without power, it does not provide a comprehensive or complete answer to the question. The reference answer, \"Electrical devices,\" more accurately reflects that various electrical devices will not function during a power outage, including those used for internet connectivity. Thus, the model's prediction is partially correct but lacks context and detail, making it less useful than the reference answer.",
+    "bert_score_f1": 0.3845771253108978
+  },
+  {
+    "question": "Why do people wear jackets in winter?",
+    "reference": "To stay warm",
+    "prediction": "People wear jackets in winter to stay warm and protect themselves from the cold and rain. Jackets are designed to keep body heat in and block out wind and snow, providing a layer of protection against the elements. Additionally, many jackets are waterproof and breathable, allowing people to stay dry and comfortable even during wet weather conditions.",
+    "exact_match": false,
+    "bleu": 0.010467939329359709,
+    "rougeL": 0.1,
+    "cosine_similarity": 0.46082812547683716,
+    "agent_score": 4,
+    "agent_feedback": "### Response:\nScore: 4\nExplanation: The model's prediction accurately explains why people wear jackets in winter, providing a comprehensive and detailed answer that covers both warmth and protection. Additionally, the model's use of specific examples such as waterproof and breathable features further enhances the clarity and completeness of the answer.",
+    "bert_score_f1": 0.1504565328359604
+  },
+  {
+    "question": "Can you breathe underwater without equipment?",
+    "reference": "No",
+    "prediction": "No, humans cannot naturally hold their breath for an extended period of time without the aid of special equipment or training. The average person can only hold their breath for about 30 seconds before needing to exhale again. This is because our bodies lack the necessary oxygen supply and blood circulation to sustain prolonged underwater breathing.",
+    "exact_match": false,
+    "bleu": 0.005131423326712104,
+    "rougeL": 0.03508771929824561,
+    "cosine_similarity": 0.09307144582271576,
+    "agent_score": 5,
+    "agent_feedback": "### Response:\nScore: 5\nExplanation: The model prediction accurately explains that humans cannot naturally hold their breath for an extended period of time without equipment or training, and provides a clear and concise explanation of the physiological reasons behind this limitation. The only improvement I could suggest is to provide more specific information on the average duration of breath-holding without equipment, which is 30 seconds.",
+    "bert_score_f1": -0.1654871106147766
+  },
+  {
+    "question": "What happens if milk is left out on a hot day?",
+    "reference": "It spoils",
+    "prediction": "Milk will sour and become unsafe to drink. The bacteria in the milk will multiply rapidly in warm temperatures, causing it to spoil quickly. It's recommended to refrigerate milk as soon as possible after purchase to prolong its shelf life.",
+    "exact_match": false,
+    "bleu": 0.006626589205134352,
+    "rougeL": 0.09302325581395349,
+    "cosine_similarity": 0.2720144987106323,
+    "agent_score": 4,
+    "agent_feedback": "### Feedback:\nScore: 4\nExplanation: The model prediction is mostly correct and covers all important points related to what happens if milk is left out on a hot day. However, it could be more specific about the bacteria that spoils milk. Additionally, the model could provide more information about how long it takes for milk to spoil in warm temperatures. Overall, the model's answer is quite accurate and complete.",
+    "bert_score_f1": -0.17346997559070587
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 0.0,
+  "bleu (avg)": 0.009,
+  "rougeL (avg)": 0.1297,
+  "cosine_similarity (avg)": 0.3443000018596649,
+  "bert_score_f1 (avg)": 0.1061,
+  "agent_score (avg)": 11.6
+}
