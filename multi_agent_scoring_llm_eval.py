@@ -25,21 +25,16 @@ judge_models = {
 
 # === Evaluation Data ===
 eval_data = [
- {"question": "If all cats are animals and some animals are dogs, can some cats be dogs?", "answer": "No"},
-  {"question": "John is taller than Mary, and Mary is taller than Alice. Who is the tallest?", "answer": "John"},
-  {"question": "If it takes 3 workers 6 hours to complete a task, how long for 6 workers?", "answer": "3 hours"},
-  {"question": "A train travels 60 km in 1 hour. How far in 3.5 hours?", "answer": "210 km"},
-  {"question": "If eggs cost 5 for $1, how much for 15?", "answer": "$3"},
-  {"question": "Two cars travel east and north at 60 km/h for 1 hour. How far apart are they?", "answer": "84.85 km"},
-  {"question": "You have a 3L and 5L jug. How to measure 4L?", "answer": "Use water transfer to leave 4L in the 5L jug"},
-  {"question": "What comes next: 2, 4, 8, 16?", "answer": "32"},
-  {"question": "If a > b and b > c, is a > c?", "answer": "Yes"},
-  {"question": "A man has 4 sons, each has one sister. How many children?", "answer": "5"}
-
-
-
-
-
+ {"question": "What is 48 divided by 6?", "answer": "8"},
+  {"question": "A car travels 60 km in 30 minutes. Speed in km/h?", "answer": "120 km/h"},
+  {"question": "What is 15% of 200?", "answer": "30"},
+  {"question": "Solve for x: 2x+3=11", "answer": "4"},
+  {"question": "What is 7 factorial?", "answer": "5040"},
+  {"question": "Solve: √81 + √16", "answer": "13"},
+  {"question": "If x=3, find 2x²+1", "answer": "19"},
+  {"question": "Compute 0.75 × 0.4", "answer": "0.3"},
+  {"question": "Sum of first five natural numbers?", "answer": "15"},
+  {"question": "If y=2, solve y³ - y", "answer": "6"}
 ]
 
 # === Metric Tools ===
@@ -147,7 +142,7 @@ def safe_convert(obj):
     return str(obj) if not isinstance(obj, (dict, list, str, float, int)) else obj
 
 # === Save to File ===
-output_path = "C:/myworks/AI_Agent_AS_LLM_Judge_Evaluator/llm_multiagent_eval_LOGICAL_reasoning.txt"
+output_path = "C:/myworks/AI_Agent_AS_LLM_Judge_Evaluator/llm_multiagent_eval_mathematical_REASONING.txt"
 with open(output_path, "w", encoding="utf-8") as f:
     f.write("=== Per-Sample Results ===\n")
     f.write(json.dumps(results, indent=2, default=safe_convert))

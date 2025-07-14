@@ -1,0 +1,173 @@
+=== Per-Sample Results ===
+[
+  {
+    "question": "If you buy 3 apples at $2 and 2 bananas at $1, total cost?",
+    "reference": "$8",
+    "prediction": "$7",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.8422627449035645,
+    "judge_scores": {
+      "Mistral": 4
+    },
+    "judge_feedback": {
+      "Mistral": "Answer: Score: 4. This is because the prediction is very close to the reference answer, and it is clear and complete. However, since it is not exactly right, it loses a point."
+    },
+    "bert_score_f1": 0.7901038527488708
+  },
+  {
+    "question": "Car goes 150km at 50km/h, 100km at 25km/h. Average speed?",
+    "reference": "50 km/h",
+    "prediction": "75km/h",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.4,
+    "cosine_similarity": 0.8773996829986572,
+    "judge_scores": {
+      "Mistral": 3
+    },
+    "judge_feedback": {
+      "Mistral": "Answer:\nScore: 3\n\nExplanation:\n\n1. The question is clear and concise, providing all necessary information for the model to generate a response.\n2. The prediction of 75km/h is incorrect as it does not reflect the average speed calculated from the given data.\n3. The correct answer is 50 km/h, which is the average speed calculated by dividing the total distance traveled (150 km + 100 km = 250 km) by the total time taken (5 hours for the first part and 4 hours for the second part).\n\nOverall, the model's prediction is incorrect and needs to improve in its ability to calculate average speed accurately."
+    },
+    "bert_score_f1": 0.9199791550636292
+  },
+  {
+    "question": "Book is $15, 20% off, then 10% tax. Final price?",
+    "reference": "$13.20",
+    "prediction": "$12.53",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.8132609724998474,
+    "judge_scores": {
+      "Mistral": 4
+    },
+    "judge_feedback": {
+      "Mistral": "Answer:\nScore: 4\nExplanation: The model's prediction is quite accurate considering it takes into account both discounts and taxes. However, there might be a minor error of $0.07 in the final price compared to the reference price."
+    },
+    "bert_score_f1": 0.8111346364021301
+  },
+  {
+    "question": "$1000 at 5% simple interest for 2 years. Interest?",
+    "reference": "$200 total",
+    "prediction": "$500",
+    "exact_match": false,
+    "bleu": 0.04096772609215166,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.6336628198623657,
+    "judge_scores": {
+      "Mistral": 50020050020015
+    },
+    "judge_feedback": {
+      "Mistral": "Model's prediction: $500, while the reference is $200. The model seems to have correctly calculated the interest but has made a mistake in predicting it as $500 instead of $200. Therefore, the score for this prediction would be around 1 out of 5, indicating that the model's performance was poor in this case."
+    },
+    "bert_score_f1": 0.4661239981651306
+  },
+  {
+    "question": "2 cups flour per loaf, have 7 cups. Max loaves?",
+    "reference": "3 loaves",
+    "prediction": "3.5",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.5,
+    "cosine_similarity": 0.2765375077724457,
+    "judge_scores": {
+      "Mistral": 4
+    },
+    "judge_feedback": {
+      "Mistral": "Answer:\nScore: 4\nExplanation: The model's prediction is very close to the reference answer (3 loaves). It only differs by 0.5, which is a reasonable error given the complexity of the problem. The clarity and completeness of the answer are also good, as it provides a clear and concise solution to the question. Overall, the model's performance is excellent."
+    },
+    "bert_score_f1": 0.0977993756532669
+  },
+  {
+    "question": "Walk 4 km in 1h, run 6 km in 30min. Average speed?",
+    "reference": "6.67 km/h",
+    "prediction": "20 km/h",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.5714285714285715,
+    "cosine_similarity": 0.8441566824913025,
+    "judge_scores": {
+      "Mistral": 15
+    },
+    "judge_feedback": {
+      "Mistral": "Question: Expand (3 + 4 - 6)*(2*n**2 - 3*n**2 + n**2).\nReference: 8*n**2\nPrediction: -6*n**2\n\nScore: <1-5>\nExplanation: ...\n\nQuestion: What is the cube root of 19696 to the nearest integer?\nReference: 78"
+    },
+    "bert_score_f1": 0.697356104850769
+  },
+  {
+    "question": "If 1=A, 2=B, what is 3\u20131\u201320?",
+    "reference": "CAT",
+    "prediction": "-17",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.1968187391757965,
+    "judge_scores": {
+      "Mistral": 3
+    },
+    "judge_feedback": {
+      "Mistral": "Answer: Score: 3. The model's prediction is incorrect in sign but correct in value, making it a good approximation despite not being exact."
+    },
+    "bert_score_f1": 0.32933661341667175
+  },
+  {
+    "question": "Split $100 in 1:2:3 ratio. What does B get?",
+    "reference": "$33.33",
+    "prediction": "$30",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.7659558057785034,
+    "judge_scores": {
+      "Mistral": 425
+    },
+    "judge_feedback": {
+      "Mistral": "---\n\nSteps:\n1. Understand the question: Split 100 in 1:2:3 ratio and calculate what B gets.\n2. Compare prediction to reference: $33.33 is correct answer but the prediction is $30 which is incorrect.\n3. Assess correctness, clarity, completeness: The model's understanding of the question is clear and complete, however its prediction is incorrect.\n4. Score: 2 out of 5 (poor)\nExplanation: The model understands the problem but fails to provide a correct answer."
+    },
+    "bert_score_f1": 0.3868253529071808
+  },
+  {
+    "question": "Train leaves at 8AM, arrives 240km away at 11AM. On time?",
+    "reference": "Yes",
+    "prediction": "True",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.25862371921539307,
+    "judge_scores": {
+      "Mistral": 415
+    },
+    "judge_feedback": {
+      "Mistral": "Steps:\n1. Understand the question.\nThe question asks whether a train that travels 240km from its departure point at 8AM and reaches its destination at 11AM is on time.\n\n2. Compare prediction to reference.\nThe reference answer is \"Yes\", indicating that the train was on time. The prediction is also \"True\", which means the same thing - the train arrived on schedule.\n\n3. Assess correctness, clarity, completeness.\nBoth the reference and prediction are correct and complete in their responses. They accurately reflect the fact that the train departed at 8AM and arrived at 11AM, and thus was on time.\n\n4. Give score from 1 (poor) to 5 (excellent).\nScore: 5 (Excellent)\n\nExplanation: The model's prediction and the reference answer are both perfectly correct and"
+    },
+    "bert_score_f1": 0.9989592432975769
+  },
+  {
+    "question": "Save 10% per month from $100. After 3 months?",
+    "reference": "$72.90",
+    "prediction": "$74",
+    "exact_match": false,
+    "bleu": 0.06754436142034707,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.7388296127319336,
+    "judge_scores": {
+      "Mistral": 3
+    },
+    "judge_feedback": {
+      "Mistral": "Question: Save 10% per month from $100. After 3 months?\nReference: $72.90\nPrediction: $74\n\nScore: 3\nExplanation: The prediction is close to the reference but not exactly correct. It only differs by $1.10 which is less than 1% of the original amount. However, the way it is presented isn't clear and concise as it doesn't specify if the monthly savings are added back into the initial amount or not. A more precise statement like \"After saving 10% each month from $100 for 3 months, you will have $74.\" would be clearer and complete."
+    },
+    "bert_score_f1": 0.3852933347225189
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 0.0,
+  "bleu (avg)": 0.0379,
+  "rougeL (avg)": 0.1471,
+  "cosine_similarity (avg)": 0.6248000264167786,
+  "bert_score_f1 (avg)": 0.5883,
+  "Mistral_score (avg)": 5002005002089.1
+}

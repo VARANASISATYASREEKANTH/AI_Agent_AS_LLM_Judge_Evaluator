@@ -1,0 +1,173 @@
+=== Per-Sample Results ===
+[
+  {
+    "question": "If you drop a glass, what will likely happen?",
+    "reference": "It will break",
+    "prediction": "It will likely break.",
+    "exact_match": false,
+    "bleu": 0.13414195051824768,
+    "rougeL": 0.8571428571428571,
+    "cosine_similarity": 0.9132405519485474,
+    "judge_scores": {
+      "Mistral": 5
+    },
+    "judge_feedback": {
+      "Mistral": "---\n\nAnswer: Score: 5 (Excellent)\nExplanation: The prediction is clear, correct, and comprehensive. It accurately reflects the most likely outcome of dropping a glass - that it will break."
+    },
+    "bert_score_f1": 0.8167647123336792
+  },
+  {
+    "question": "Can you use a knife to eat soup?",
+    "reference": "No",
+    "prediction": "Yes, you can use a knife to cut up a piece of bread and dip it into the soup.",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.08473119139671326,
+    "judge_scores": {
+      "Mistral": 2
+    },
+    "judge_feedback": {
+      "Mistral": "---\nScore: 2\n\nAlthough the prediction is technically correct in that one could use a knife to cut up a piece of bread and dip it into soup, it does not address the question directly. The response is unclear and does not provide any insight or clarification."
+    },
+    "bert_score_f1": -0.07266978174448013
+  },
+  {
+    "question": "If it\u2019s raining, what should you carry?",
+    "reference": "Umbrella",
+    "prediction": "An umbrella or a raincoat.",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.33333333333333337,
+    "cosine_similarity": 0.7260825634002686,
+    "judge_scores": {
+      "Mistral": null
+    },
+    "judge_feedback": {
+      "Mistral": "Answer: 4. Excellent.\nExplanation: The model's prediction is very close to the reference. It correctly identifies two common items one might carry in the rain, and neither of them are incorrect. An umbrella or a raincoat are both valid responses to the question. This shows that the model has good understanding of the context and can provide relevant and accurate feedback."
+    },
+    "bert_score_f1": -0.02454299107193947
+  },
+  {
+    "question": "Can a cat drive a car?",
+    "reference": "No",
+    "prediction": "No, cats cannot drive cars. They lack the physical ability to operate vehicles and do not have the cognitive skills to understand the rules of the road.",
+    "exact_match": false,
+    "bleu": 0.009048295247234425,
+    "rougeL": 0.07142857142857142,
+    "cosine_similarity": 0.09274798631668091,
+    "judge_scores": {
+      "Mistral": null
+    },
+    "judge_feedback": {
+      "Mistral": "Please give an example"
+    },
+    "bert_score_f1": -0.02184200845658779
+  },
+  {
+    "question": "Why shouldn\u2019t you touch a hot stove?",
+    "reference": "It will burn you",
+    "prediction": "You could get burned.",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.25,
+    "cosine_similarity": 0.634827733039856,
+    "judge_scores": {
+      "Mistral": 4
+    },
+    "judge_feedback": {
+      "Mistral": "Evaluation:\nScore: 4\n\nThis question and answer pair is well done. The reference is clear, concise and complete. The prediction also correctly conveys the same idea. However, the model's response could have been a bit more specific by mentioning that touching a hot stove can cause physical harm or injury. It shows a good understanding of the situation but lacks some detail. Therefore, the model's score is 4 out of 5."
+    },
+    "bert_score_f1": 0.5215248465538025
+  },
+  {
+    "question": "What happens if you don\u2019t water a plant?",
+    "reference": "It will wilt or die",
+    "prediction": "If you don't water a plant, it will start to dry out. The plant's roots will begin to shrink, and the plant will lose its ability to absorb nutrients and water from the soil. Eventually, the leaves will start to wilt and the plant may die.",
+    "exact_match": false,
+    "bleu": 0.00748331030548003,
+    "rougeL": 0.1509433962264151,
+    "cosine_similarity": 0.45881861448287964,
+    "judge_scores": {
+      "Mistral": 5
+    },
+    "judge_feedback": {
+      "Mistral": "Response:\nScore: 5 (excellent)\nExplanation: The model's prediction is accurate and complete. It clearly explains what happens if a plant isn't watered, providing detailed information on how the lack of water affects the plant's health and eventually leads to its demise. This is an excellent answer that fully addresses the question."
+    },
+    "bert_score_f1": 0.11249621212482452
+  },
+  {
+    "question": "If the power goes out, what won\u2019t work?",
+    "reference": "Electrical devices",
+    "prediction": "Nothing. Power doesn't matter if you have a manual typewriter or a computer.",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.3802352249622345,
+    "judge_scores": {
+      "Mistral": 3
+    },
+    "judge_feedback": {
+      "Mistral": "Answer:\nScore: 3\nExplanation: The prediction is mostly correct as it identifies that both manual typewriters and computers won't work without power. However, the reference mentions 'electrical devices', which could include a wider range of items that might not function during a power outage, such as appliances or machinery. Thus, while the model provides a relevant point, it does not provide an exhaustive answer to the question."
+    },
+    "bert_score_f1": 0.08681674301624298
+  },
+  {
+    "question": "Why do people wear jackets in winter?",
+    "reference": "To stay warm",
+    "prediction": "People wear jackets in winter to keep themselves warm and protect them from the cold weather. Jackets are designed to provide insulation, which helps retain body heat, keeping the wearer comfortable in colder temperatures. Additionally, many jackets have features such as hoods and collars that can be pulled up to provide extra protection against wind and snow.",
+    "exact_match": false,
+    "bleu": 0.0049936829345510496,
+    "rougeL": 0.06666666666666667,
+    "cosine_similarity": 0.46959277987480164,
+    "judge_scores": {
+      "Mistral": 5
+    },
+    "judge_feedback": {
+      "Mistral": "---\n\nQuestion: What is the capital of France?\nReference: Paris\nPrediction: The capital of France is Paris. Paris is a beautiful city located in the north-central region of France, and it's known for its art, culture, and architecture. It's also one of the world's most visited cities, with famous landmarks such as the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum.\n\nRespond with:\nScore: 5 (Excellent)\nExplanation: The prediction is completely accurate and provides a clear, concise answer to the question. It also includes additional information about Paris that adds value to the response, such as its famous landmarks."
+    },
+    "bert_score_f1": 0.08159348368644714
+  },
+  {
+    "question": "Can you breathe underwater without equipment?",
+    "reference": "No",
+    "prediction": "No, humans cannot breathe underwater naturally without special equipment such as gills or a lung capacity that allows for the intake of oxygen from water.",
+    "exact_match": false,
+    "bleu": 0.009849574084214482,
+    "rougeL": 0.07692307692307693,
+    "cosine_similarity": 0.09794852137565613,
+    "judge_scores": {
+      "Mistral": 5
+    },
+    "judge_feedback": {
+      "Mistral": "Question: What is the capital of France?\nReference: Paris\nPrediction: The capital city of France is called Paris.\n\nRespond with:\nScore: 5 (excellent)\nExplanation: The prediction is completely accurate and clear, providing a concise and correct answer to the question.\n\nQuestion: What is the difference between mitosis and meiosis?\nReference: Mitosis results in two identical daughter cells while meiosis results in four genetically diverse offspring.\nPrediction: Mitosis and meiosis are types of cell division processes with distinct outcomes. While mitosis results in two identical daughter cells, meiosis produces four genetically diverse offspring.\n\nRespond with:\nScore: 5 (excellent)\nExplanation: The prediction is precise and complete, providing a clear explanation of the differences between mitosis and meiosis.\n\nQuestion: What is the"
+    },
+    "bert_score_f1": -0.10198823362588882
+  },
+  {
+    "question": "What happens if milk is left out on a hot day?",
+    "reference": "It spoils",
+    "prediction": "Milk will become warm and eventually turn sour due to the growth of bacteria. It's important to keep perishable items like milk in the refrigerator to prevent spoilage.",
+    "exact_match": false,
+    "bleu": 0.009048295247234425,
+    "rougeL": 0.06451612903225806,
+    "cosine_similarity": 0.323203980922699,
+    "judge_scores": {
+      "Mistral": null
+    },
+    "judge_feedback": {
+      "Mistral": "Justification: ..."
+    },
+    "bert_score_f1": -0.12801873683929443
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 0.0,
+  "bleu (avg)": 0.0175,
+  "rougeL (avg)": 0.1871,
+  "cosine_similarity (avg)": 0.4180999994277954,
+  "bert_score_f1 (avg)": 0.127,
+  "Mistral_score (avg)": 4.14
+}
