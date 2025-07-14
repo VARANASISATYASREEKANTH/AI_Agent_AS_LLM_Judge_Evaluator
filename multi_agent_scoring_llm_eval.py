@@ -25,16 +25,19 @@ judge_models = {
 
 # === Evaluation Data ===
 eval_data = [
- {"question": "What is 48 divided by 6?", "answer": "8"},
-  {"question": "A car travels 60 km in 30 minutes. Speed in km/h?", "answer": "120 km/h"},
-  {"question": "What is 15% of 200?", "answer": "30"},
-  {"question": "Solve for x: 2x+3=11", "answer": "4"},
-  {"question": "What is 7 factorial?", "answer": "5040"},
-  {"question": "Solve: √81 + √16", "answer": "13"},
-  {"question": "If x=3, find 2x²+1", "answer": "19"},
-  {"question": "Compute 0.75 × 0.4", "answer": "0.3"},
-  {"question": "Sum of first five natural numbers?", "answer": "15"},
-  {"question": "If y=2, solve y³ - y", "answer": "6"}
+
+
+  {"question": "Write a haiku about autumn", "answer": "Leaves fall in silence / Crisp air warms the golden earth / Autumn whispers calm"},
+  {"question": "Describe your ideal vacation", "answer": "Relaxing on a beach with books and sunshine"},
+  {"question": "Write a motivational quote for students", "answer": "Believe in your power to learn and grow every day"},
+  {"question": "Suggest a creative birthday gift", "answer": "Personalized photo album of shared memories"},
+  {"question": "Describe a futuristic city", "answer": "Skyscrapers powered by sunlight hover above green rooftop gardens"},
+  {"question": "Write a joke about computers", "answer": "Why did the computer go to therapy? It had too many bytes of self-doubt."},
+  {"question": "Describe a childhood moment", "answer": "Catching fireflies on a summer night"},
+  {"question": "Pitch a smart water bottle", "answer": "Bottle reminds you to drink and tracks intake via app"},
+  {"question": "Team-building activity for remote teams?", "answer": "Virtual escape room requiring collaboration"},
+  {"question": "Express gratitude to a teacher", "answer": "Thank you for inspiring and believing in me every day"}
+
 ]
 
 # === Metric Tools ===
@@ -142,7 +145,7 @@ def safe_convert(obj):
     return str(obj) if not isinstance(obj, (dict, list, str, float, int)) else obj
 
 # === Save to File ===
-output_path = "C:/myworks/AI_Agent_AS_LLM_Judge_Evaluator/llm_multiagent_eval_mathematical_REASONING.txt"
+output_path = "C:/myworks/AI_Agent_AS_LLM_Judge_Evaluator/llm_multiagent_eval_open_ended_generation.txt"
 with open(output_path, "w", encoding="utf-8") as f:
     f.write("=== Per-Sample Results ===\n")
     f.write(json.dumps(results, indent=2, default=safe_convert))

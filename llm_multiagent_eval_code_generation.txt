@@ -1,0 +1,173 @@
+=== Per-Sample Results ===
+[
+  {
+    "question": "Write Python code to swap variables a and b",
+    "reference": "a, b = b, a",
+    "prediction": "a, b = b, a",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0,
+    "judge_scores": {
+      "Mistral": 5
+    },
+    "judge_feedback": {
+      "Mistral": "Evaluation:\nScore: 5 (excellent)\nExplanation: The prediction is exactly the same as the reference. It correctly swaps the values of variables a and b."
+    },
+    "bert_score_f1": 0.9999996423721313
+  },
+  {
+    "question": "Define a function to add two numbers",
+    "reference": "def add(x, y): return x + y",
+    "prediction": "Here is an example of a Python function that takes in two numbers and returns their sum:\n```python\ndef add_numbers(a, b):\n  sum = a + b\n  return sum\n```",
+    "exact_match": false,
+    "bleu": 0.02261177675478836,
+    "rougeL": 0.17142857142857143,
+    "cosine_similarity": 0.6802003383636475,
+    "judge_scores": {
+      "Mistral": 41535
+    },
+    "judge_feedback": {
+      "Mistral": "Steps:\n\n1. Understand the question: The question asks for a function that takes in two numbers and returns their sum.\n2. Compare prediction to reference: The predicted function is similar to the reference function, but it uses different variable names (a, b) instead of x, y.\n3. Assess correctness, clarity, completeness: The predicted function is correct in terms of its functionality, but it could be more clear and complete by providing a docstring that explains what the function does and what inputs and outputs it expects/returns. It would also be more descriptive to name the function something like `sum_two_numbers` instead of just `add_numbers`.\n4. Give score from 1 (poor) to 5 (excellent): I would give this prediction a score of 3 out of 5 because it is mostly correct, but could be improved with additional clarity and completeness."
+    },
+    "bert_score_f1": 0.18417467176914215
+  },
+  {
+    "question": "Write a loop to print numbers 1\u20135",
+    "reference": "for i in range(1,6): print(i)",
+    "prediction": "for i in range(1,6):\n# print(i)",
+    "exact_match": false,
+    "bleu": 0.7611606003349892,
+    "rougeL": 1.0,
+    "cosine_similarity": 0.9872919917106628,
+    "judge_scores": {
+      "Mistral": 3
+    },
+    "judge_feedback": {
+      "Mistral": "Score: 3\nExplanation: The prediction is correct but lacks clarity and completeness. It contains only the necessary code structure to implement the loop but does not provide any explanation or context about what the loop does."
+    },
+    "bert_score_f1": 0.8601725697517395
+  },
+  {
+    "question": "Reverse a string s in Python",
+    "reference": "s[::-1]",
+    "prediction": "s[::-1]",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0000001192092896,
+    "judge_scores": {
+      "Mistral": 5
+    },
+    "judge_feedback": {
+      "Mistral": "Score: 5 (excellent)\nExplanation: The model's prediction is exactly the same as the reference. It correctly reverses the string in Python using slicing syntax [::-1]."
+    },
+    "bert_score_f1": 1.0000007152557373
+  },
+  {
+    "question": "List comprehension for squares 1\u20135",
+    "reference": "[i**2 for i in range(1,6)]",
+    "prediction": "[x**2 for x in range(1, 6)]",
+    "exact_match": false,
+    "bleu": 0.2722589423069702,
+    "rougeL": 0.75,
+    "cosine_similarity": 0.8201691508293152,
+    "judge_scores": {
+      "Mistral": 5
+    },
+    "judge_feedback": {
+      "Mistral": "Score: 5 (Excellent)\nExplanation: The model's prediction is identical to the reference. It correctly lists the squares of numbers from 1 to 5 using a list comprehension. This demonstrates a high level of understanding and accuracy in the task."
+    },
+    "bert_score_f1": 0.8495883345603943
+  },
+  {
+    "question": "Check if number is even",
+    "reference": "n % 2 == 0",
+    "prediction": "False",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.11033516377210617,
+    "judge_scores": {
+      "Mistral": null
+    },
+    "judge_feedback": {
+      "Mistral": "Please provide a reference for me to check."
+    },
+    "bert_score_f1": -0.01534382812678814
+  },
+  {
+    "question": "Read a file and print lines",
+    "reference": "with open('file.txt') as f: print(f.read())",
+    "prediction": "To read a file and print the lines you need to specify a path to the file with Python's built-in open function, then use a for loop to iterate over each line in the file. Here is an example:\n\n```python\n# specify the path to the file \nfile_path = \"example.txt\" \n\n# open the file in 'read' mode \nwith open(file_path, \"r\") as file:\n    # iterate over each line in the file\n    for line in file:\n        print(line)\n```",
+    "exact_match": false,
+    "bleu": 0.027234368457444192,
+    "rougeL": 0.13793103448275862,
+    "cosine_similarity": 0.7856472134590149,
+    "judge_scores": {
+      "Mistral": null
+    },
+    "judge_feedback": {
+      "Mistral": "Note: Evaluation may not be perfect due to various reasons like interpretation ambiguities or differences in the language used."
+    },
+    "bert_score_f1": 0.01676671765744686
+  },
+  {
+    "question": "Create dictionary with keys a, b",
+    "reference": "{'a':1, 'b':2}",
+    "prediction": "{'a': {}, 'b': {}}",
+    "exact_match": false,
+    "bleu": 0.057840878869691144,
+    "rougeL": 0.6666666666666666,
+    "cosine_similarity": 0.926250696182251,
+    "judge_scores": {
+      "Mistral": 15
+    },
+    "judge_feedback": {
+      "Mistral": "---\nQuestion: Predict the next number in 511100, 511096, 511082.\nReference: None - we are given a sequence of numbers but no reference point to compare against.\nPrediction: The next number in the sequence is 511074.\n\nRespond with: Score: <1-5>\nExplanation: ...\n\n---\nQuestion: What is the weather forecast for today in New York?\nReference: None - we are given a location but no specific date.\nPrediction: The weather forecast for today in New York is mostly sunny with a high temperature of 80 degrees Fahrenheit.\n\nRespond with: Score: <1-5>\nExplanation: ..."
+    },
+    "bert_score_f1": 0.5089077949523926
+  },
+  {
+    "question": "Convert list to set",
+    "reference": "set(my_list)",
+    "prediction": "To convert a list to a set, you can use the built-in Python function `set()`. Here is how to do it:\n```python\nmy_list = [1, 2, 3, 4, 5, 2]\nmy_set = set(my_list)\nprint(my_set)\n```\nThis will output the following:\n```\n{1, 2, 3, 4, 5}\n```\nAs you can see, the order of elements in the original list is not preserved when converting to a set. If you want to preserve the order, you can use a different approach using `OrderedDict`.",
+    "exact_match": false,
+    "bleu": 0.018679007277390407,
+    "rougeL": 0.0689655172413793,
+    "cosine_similarity": 0.5878543853759766,
+    "judge_scores": {
+      "Mistral": null
+    },
+    "judge_feedback": {
+      "Mistral": "Justification: ..."
+    },
+    "bert_score_f1": 0.018648717552423477
+  },
+  {
+    "question": "Add x to list lst",
+    "reference": "lst.append(x)",
+    "prediction": "lst.append(x)",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 0.9999999403953552,
+    "judge_scores": {
+      "Mistral": 5
+    },
+    "judge_feedback": {
+      "Mistral": "Answer:\nScore: 5 (excellent)\nExplanation: The prediction is identical to the reference, indicating a perfect match and complete understanding of the question. Therefore, the score is excellent."
+    },
+    "bert_score_f1": 1.0000007152557373
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 30.0,
+  "bleu (avg)": 0.416,
+  "rougeL (avg)": 0.5795,
+  "cosine_similarity (avg)": 0.7897999882698059,
+  "bert_score_f1 (avg)": 0.5423,
+  "Mistral_score (avg)": 5939.0
+}

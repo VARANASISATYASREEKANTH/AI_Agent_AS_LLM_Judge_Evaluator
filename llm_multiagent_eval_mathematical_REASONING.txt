@@ -1,0 +1,173 @@
+=== Per-Sample Results ===
+[
+  {
+    "question": "What is 48 divided by 6?",
+    "reference": "8",
+    "prediction": "8",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0000001192092896,
+    "judge_scores": {
+      "Mistral": null
+    },
+    "judge_feedback": {
+      "Mistral": "Please include relevant and specific details in your explanation."
+    },
+    "bert_score_f1": 1.0000007152557373
+  },
+  {
+    "question": "A car travels 60 km in 30 minutes. Speed in km/h?",
+    "reference": "120 km/h",
+    "prediction": "120 km/h",
+    "exact_match": true,
+    "bleu": 0.2213885886251307,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0,
+    "judge_scores": {
+      "Mistral": null
+    },
+    "judge_feedback": {
+      "Mistral": "Justify the score: ..."
+    },
+    "bert_score_f1": 1.0
+  },
+  {
+    "question": "What is 15% of 200?",
+    "reference": "30",
+    "prediction": "30",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0,
+    "judge_scores": {
+      "Mistral": 5
+    },
+    "judge_feedback": {
+      "Mistral": "Answer: Score: 5\nExplanation: The prediction is excellent as it matches the reference answer."
+    },
+    "bert_score_f1": 1.0000014305114746
+  },
+  {
+    "question": "Solve for x: 2x+3=11",
+    "reference": "4",
+    "prediction": "-5",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.4614432454109192,
+    "judge_scores": {
+      "Mistral": null
+    },
+    "judge_feedback": {
+      "Mistral": "Justification: ..."
+    },
+    "bert_score_f1": 0.20795448124408722
+  },
+  {
+    "question": "What is 7 factorial?",
+    "reference": "5040",
+    "prediction": "5040",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0,
+    "judge_scores": {
+      "Mistral": 5
+    },
+    "judge_feedback": {
+      "Mistral": "Answer:\nScore: 5\nExplanation: The model's prediction is completely correct and accurately reflects the reference answer. It demonstrates a high level of understanding and ability to provide clear, complete responses."
+    },
+    "bert_score_f1": 0.9999996423721313
+  },
+  {
+    "question": "Solve: \u221a81 + \u221a16",
+    "reference": "13",
+    "prediction": "5*\u221a7",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.2533610761165619,
+    "judge_scores": {
+      "Mistral": 4
+    },
+    "judge_feedback": {
+      "Mistral": "Response:\nScore: 4\nExplanation: The model's prediction is mostly correct but lacks clarity. It correctly identifies the sum of two squares, but it does not provide a clear justification for its answer. The reference solution is straightforward and easy to understand, whereas the prediction involves complex mathematical concepts like square roots and multiplication which may confuse some users."
+    },
+    "bert_score_f1": -0.08394942432641983
+  },
+  {
+    "question": "If x=3, find 2x\u00b2+1",
+    "reference": "19",
+    "prediction": "7",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.5407115817070007,
+    "judge_scores": {
+      "Mistral": 3
+    },
+    "judge_feedback": {
+      "Mistral": "Steps:\n1. Understand the question: This question is asking for the value of 2x\u00b2+1 when x=3. The reference solution, 19, is given in the form of an image.\n2. Compare prediction to reference: The predicted value, 7, is not equal to the correct value of 19.\n3. Assess correctness, clarity, completeness: The question and response are clear and complete. The score is based on how closely the prediction matches the correct value, which is not at all close.\n4. Give score from 1 (poor) to 5 (excellent): Score: 1\n5. Justify the score: The model's prediction was completely incorrect, hence a score of 1 (very poor)."
+    },
+    "bert_score_f1": 0.998417854309082
+  },
+  {
+    "question": "Compute 0.75 \u00d7 0.4",
+    "reference": "0.3",
+    "prediction": "0.3",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0,
+    "judge_scores": {
+      "Mistral": 5
+    },
+    "judge_feedback": {
+      "Mistral": "Answer: Score: 5\nExplanation: The model's prediction is exactly correct and matches the reference value, making it an excellent evaluation result with a score of 5 out of 5."
+    },
+    "bert_score_f1": 0.9999996423721313
+  },
+  {
+    "question": "Sum of first five natural numbers?",
+    "reference": "15",
+    "prediction": "15",
+    "exact_match": true,
+    "bleu": 1.0,
+    "rougeL": 1.0,
+    "cosine_similarity": 1.0,
+    "judge_scores": {
+      "Mistral": 415
+    },
+    "judge_feedback": {
+      "Mistral": "Step 1: Understand the question.\nThe question asks for the sum of the first five natural numbers. It's a clear, well-defined task.\n\nStep 2: Compare prediction to reference.\nThe model's prediction matches the reference perfectly. The sum of the first five natural numbers is indeed 15.\n\nStep 3: Assess correctness, clarity, completeness.\nThe model has demonstrated complete correctness in its response as it matches the exact reference answer. The explanation provided is clear and concise. No additional context or elaboration is necessary to understand the response.\n\nStep 4: Give score from 1 (poor) to 5 (excellent).\nScore: 5 (Excellent)\n\nStep 5: Justify the score.\nThe model has shown exceptional performance by accurately predicting the sum of the first five natural numbers and providing a clear, concise"
+    },
+    "bert_score_f1": 0.9999982118606567
+  },
+  {
+    "question": "If y=2, solve y\u00b3 - y",
+    "reference": "6",
+    "prediction": "0",
+    "exact_match": false,
+    "bleu": 0,
+    "rougeL": 0.0,
+    "cosine_similarity": 0.5109590888023376,
+    "judge_scores": {
+      "Mistral": null
+    },
+    "judge_feedback": {
+      "Mistral": "---\n\nQuestion: Evaluate the following sentence. \"I am an AI assistant that helps people find information.\"\nReference: True\nPrediction: False"
+    },
+    "bert_score_f1": 0.8846936821937561
+  }
+]
+
+=== Aggregated Metrics ===
+{
+  "exact_match (%)": 60.0,
+  "bleu (avg)": 0.5221,
+  "rougeL (avg)": 0.6,
+  "cosine_similarity (avg)": 0.7766000032424927,
+  "bert_score_f1 (avg)": 0.8007,
+  "Mistral_score (avg)": 72.83
+}
