@@ -128,37 +128,37 @@ This repository provides a comprehensive comparison of common evaluation metrics
     <tr>
       <td> 1  </td>
       <td>Exact Match</td>
-      <td>   </td>
-      <td>  </td>
-      <td>  </td>
+      <td>  20.0 </td>
+      <td>  10</td>
+      <td>  30</td>
     </tr>
     <tr>
       <td>2   </td>
       <td>BLEU(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.345</td>
+      <td>0.2798</td>
+      <td>0.416</td>
     </tr>
     <tr>
       <td> 3  </td>
       <td>ROUGE L(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.4779</td>
+      <td>0.4367</td>
+      <td>05795</td>
     </tr>
     <tr>
       <td>  4 </td>
       <td>Cosine similarity</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.7034</td>
+      <td>0.687</td>
+      <td>0.789</td>
     </tr>
     <tr>
       <td> 5  </td>
       <td>BERT-f_1 score </td>
-      <td> </td>
-      <td></td>
-      <td></td>
+      <td> 0.4308</td>
+      <td>0.383</td>
+      <td>0.5423</td>
     </tr>
 
 
@@ -185,37 +185,37 @@ This repository provides a comprehensive comparison of common evaluation metrics
     <tr>
       <td> 1  </td>
       <td>Exact Match</td>
-      <td>   </td>
-      <td>  </td>
-      <td>  </td>
+      <td>  0 </td>
+      <td> 0 </td>
+      <td> 0 </td>
     </tr>
     <tr>
       <td> 2 </td>
       <td>BLEU(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.0195</td>
+      <td>0.09</td>
+      <td>0.0175</td>
     </tr>
     <tr>
       <td>  3 </td>
       <td>ROUGE L(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.2378</td>
+      <td>0.1297</td>
+      <td>0.1871</td>
     </tr>
     <tr>
       <td> 4  </td>
       <td>Cosine similarity</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.4025</td>
+      <td>0.344</td>
+      <td>0.418</td>
     </tr>
     <tr>
       <td>  5</td>
       <td>BERT-f_1 score </td>
-      <td> </td>
-      <td></td>
-      <td></td>
+      <td> 0.132</td>
+      <td>0.1061</td>
+      <td>0.127</td>
     </tr>
 
 
@@ -239,37 +239,37 @@ This repository provides a comprehensive comparison of common evaluation metrics
     <tr>
       <td> 1  </td>
       <td>Exact Match</td>
-      <td>   </td>
-      <td>  </td>
-      <td>  </td>
+      <td> 50  </td>
+      <td> 60 </td>
+      <td> 60</td>
     </tr>
     <tr>
       <td> 2  </td>
       <td>BLEU(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.5368</td>
+      <td>0.5221</td>
+      <td>0.5221</td>
     </tr>
     <tr>
       <td> 3  </td>
       <td>ROUGE L(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.55</td>
+      <td>0.7</td>
+      <td>0.6</td>
     </tr>
     <tr>
       <td>  4 </td>
       <td>Cosine similarity</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.745</td>
+      <td>0.8089</td>
+      <td>0.776</td>
     </tr>
     <tr>
       <td>  5 </td>
       <td>BERT-f_1 score </td>
-      <td> </td>
-      <td></td>
-      <td></td>
+      <td>0.7194 </td>
+      <td>0.8047</td>
+      <td>0.8407</td>
     </tr>
 
 
