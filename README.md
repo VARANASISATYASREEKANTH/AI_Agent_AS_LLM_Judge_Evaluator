@@ -268,8 +268,8 @@ This repository provides a comprehensive comparison of common evaluation metrics
       <td>  5 </td>
       <td>BERT-f_1 score </td>
       <td>0.7194 </td>
-      <td>0.8047</td>
       <td>0.8407</td>
+      <td>0.8007</td>
     </tr>
 
 
@@ -293,37 +293,37 @@ This repository provides a comprehensive comparison of common evaluation metrics
     <tr>
       <td>1   </td>
       <td>Exact Match</td>
-      <td>   </td>
-      <td>  </td>
-      <td>  </td>
+      <td>  0</td>
+      <td>  0</td>
+      <td>  0</td>
     </tr>
     <tr>
       <td>  2 </td>
       <td>BLEU(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.0489</td>
+      <td>0.0216</td>
+      <td>0.0175</td>
     </tr>
     <tr>
       <td> 3  </td>
       <td>ROUGE L(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.1735</td>
+      <td>0.1803</td>
+      <td>0.01914</td>
     </tr>
     <tr>
       <td> 4  </td>
       <td>Cosine similarity</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.5221</td>
+      <td>0.5213</td>
+      <td>0.4986</td>
     </tr>
     <tr>
       <td>5   </td>
       <td>BERT-f_1 score </td>
-      <td> </td>
-      <td></td>
-      <td></td>
+      <td> 0.1757</td>
+      <td>0.1718</td>
+      <td>0.1818</td>
     </tr>
 
 
@@ -347,37 +347,37 @@ This repository provides a comprehensive comparison of common evaluation metrics
     <tr>
       <td>1   </td>
       <td>Exact Match</td>
-      <td>   </td>
-      <td>  </td>
-      <td>  </td>
+      <td> 60  </td>
+      <td> 60 </td>
+      <td>  50</td>
     </tr>
     <tr>
       <td>  2 </td>
       <td>BLEU(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.566</td>
+      <td>0.4137</td>
+      <td>0.466</td>
     </tr>
     <tr>
       <td> 3  </td>
       <td>ROUGE L(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.847</td>
+      <td>0.7522</td>
+      <td>0.7633</td>
     </tr>
     <tr>
       <td> 4  </td>
       <td>Cosine similarity</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.91</td>
+      <td>0.8705</td>
+      <td>0.866</td>
     </tr>
     <tr>
       <td> 5  </td>
       <td>BERT-f_1 score </td>
-      <td> </td>
-      <td></td>
-      <td></td>
+      <td> 0.685</td>
+      <td>0.6248/td>
+      <td>0.5939</td>
     </tr>
     
   </tbody>
@@ -398,37 +398,37 @@ This repository provides a comprehensive comparison of common evaluation metrics
     <tr>
       <td> 1  </td>
       <td>Exact Match</td>
-      <td>   </td>
-      <td>  </td>
-      <td>  </td>
+      <td> 30  </td>
+      <td> 30 </td>
+      <td>  30</td>
     </tr>
     <tr>
       <td> 2  </td>
       <td>BLEU(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.2332</td>
+      <td>0.2478</td>
+      <td>0.248</td>
     </tr>
     <tr>
       <td>  3 </td>
       <td>ROUGE L(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.3754</td>
+      <td>0.4168</td>
+      <td>0.4158</td>
     </tr>
     <tr>
       <td>  4 </td>
       <td>Cosine similarity</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.6700</td>
+      <td>0.7361</td>
+      <td>0.74690</td>
     </tr>
     <tr>
       <td>  5 </td>
       <td>BERT-f_1 score </td>
-      <td> </td>
-      <td></td>
-      <td></td>
+      <td>0.6850 </td>
+      <td>0.7426</td>
+      <td>0.755</td>
     </tr>
 
 
@@ -451,37 +451,37 @@ This repository provides a comprehensive comparison of common evaluation metrics
     <tr>
       <td> 1  </td>
       <td>Exact Match</td>
-      <td>   </td>
-      <td>  </td>
-      <td>  </td>
+      <td>  30 </td>
+      <td>  30</td>
+      <td>  30</td>
     </tr>
     <tr>
       <td> 2 </td>
       <td>BLEU(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.2332</td>
+      <td>0.04</td>
+      <td>0.037</td>
     </tr>
     <tr>
       <td>3   </td>
       <td>ROUGE L(avg)</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.3754</td>
+      <td>0.2405</td>
+      <td>0.1471</td>
     </tr>
     <tr>
       <td> 4  </td>
       <td>Cosine similarity</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.6709</td>
+      <td>0.62</td>
+      <td>0.6248</td>
     </tr>
     <tr>
       <td> 5  </td>
       <td>BERT-f_1 score </td>
-      <td> </td>
-      <td></td>
-      <td></td>
+      <td> 0.6805</td>
+      <td>0.553</td>
+      <td>0.5883</td>
     </tr>
   </tbody>
 </table>
