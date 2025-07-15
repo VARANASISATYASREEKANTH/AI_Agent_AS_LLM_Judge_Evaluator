@@ -100,13 +100,7 @@ This repository provides a comprehensive comparison of common evaluation metrics
 | **Semantic Similarity**| Cosine Similarity, BERTScore    |
 | **Paraphrase Detection**| Cosine Similarity              |
 
----
 
-## 📜 License
-
-This README is shared under the [MIT License](LICENSE).
-
----
 
 
 
